@@ -16,5 +16,5 @@
         "dataSourceUrl": "https://data.humdata.org/dataset/:package-id",
         "dataSourceEndpoint": "https://data.humdata.org:resouce-file-path"
     },
-    "cron": "00 0 1 * * *"
+    "cron": "00 0 3 * * *"
 }
