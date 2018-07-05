@@ -103,7 +103,7 @@ const HDX_FAKE_DATASET_CREATE_REQUEST = {
         name: 'Fake dataset',
         slug: 'fake-dataset_17',
         connectorType: 'rest',
-        provider: 'worldbank',
+        provider: 'hdx',
         userId: '1a10d7c6e0a37126611fd7a7',
         updatedAt: '2018-06-01T11:04:47.231Z',
         createdAt: '2018-06-01T11:04:47.231Z',
