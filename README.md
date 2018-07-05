@@ -34,6 +34,14 @@ It is necessary to define these environment variables:
 * CT_URL => Control Tower URL
 * NODE_ENV => Environment (prod, staging, dev)
 
+### Cron task
+
+This component executes a periodic task that updates the metadata of each indexed RW dataset. The task is bootstrapped  
+[when the application server starts](https://github.com/GPSDD/hdx-index-adapter/blob/master/app/src/app.js#L19). 
+The task's implementation can be found on `app/src/cron/cron` and the configuration is loaded from the 
+[config files](https://github.com/GPSDD/hdx-index-adapter/blob/master/config/default.json#L18)
+
+
 ## Field correspondence
 
 The field correspondence is based on the metadata object for a single package - I.E. [this link](https://data.humdata.org/api/3/action/package_show?id=141121-sierra-leone-health-facilities).
@@ -60,5 +68,16 @@ Given that this structure does not match directly to the API structure, we use t
 | status                    |                       | 'published'   |
 
 
-As for importing `tag` data, the `package.tags.name` will be tentatively matched to the taxonomy entities already present in the graph database, and imported when they match.
-In parallel, the API's `legacy` taxonomy will be populated with the `package.organization.title` value. 
+## Dataset tagging strategy
+
+
+### Taxonomy
+
+HDX datasets have tags associated with them, which this connector uses to tag the index datasets. The tags are
+ loaded from the HDX metadata response using the following JSONPath expression: `$.result.tags[*].display_name`
+Additionally, each HDX dataset is tagged with the "HDX API" tag, and a tag to match 
+[the RW API application to which they belong](https://github.com/GPSDD/resource-watch-index-adapter/blob/b5c32ee91018b60df56048b8df2b303787796bba/app/src/services/resourcewatch.service.js#L101).
+
+### Graph
+
+No graph tagging is done on HDX datasets.

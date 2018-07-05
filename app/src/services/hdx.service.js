@@ -54,7 +54,6 @@ class HDXIndexService {
         logger.debug(`Obtaining metadata of HFX package ${dataset.tableName}`);
 
         logger.debug('Obtaining dataset info and metadata of HFX package ', `${config.hdx.package}`.replace(':package-id', dataset.tableName));
-        // let sourceOrganization;
         let hdxPackage;
 
         try {
@@ -128,37 +127,28 @@ class HDXIndexService {
             throw new Error(`Error obtaining metadata: ${err}`);
         }
 
-        // if (!update && hdxPackage) {
-        //     try {
-        //         let hdxTags = hdxPackage.tags.map(elem => elem.name);
-        //
-        //         const body = {
-        //             legacy: {
-        //                 tags: ['HDX API', hdxPackage.organization.title]
-        //             }
-        //         };
-        //         if (hdxTags && hdxTags.length > 0) {
-        //             body.knowledge_graph = {
-        //                 tags: hdxTags
-        //             };
-        //         }
-        //
-        //         if (sourceOrganization && sourceOrganization !== 'HDX API') {
-        //             body.legacy.tags.push(sourceOrganization);
-        //         }
-        //
-        //         logger.debug('Tagging dataset for HDX dataset', dataset.tableName);
-        //         await ctRegisterMicroservice.requestToMicroservice({
-        //             method: 'POST',
-        //             uri: `/dataset/${dataset.id}/vocabulary`,
-        //             body,
-        //             json: true
-        //         });
-        //     } catch (err) {
-        //         logger.error('Error tagging dataset', err);
-        //         throw new Error(`Error tagging dataset: ${err}`);
-        //     }
-        // }
+        if (!update && hdxPackage) {
+            try {
+                const body = {
+                    legacy: {
+                        tags: ['HDX API', hdxPackage.organization.title]
+                    }
+                };
+
+                hdxPackage.tags.forEach(elem => body.legacy.tags.push(elem.name));
+
+                logger.debug('Tagging dataset for HDX dataset', dataset.tableName);
+                await ctRegisterMicroservice.requestToMicroservice({
+                    method: 'POST',
+                    uri: `/dataset/${dataset.id}/vocabulary`,
+                    body,
+                    json: true
+                });
+            } catch (err) {
+                logger.error('Error tagging dataset', err);
+                throw new Error(`Error tagging dataset: ${err}`);
+            }
+        }
     }
 
 }

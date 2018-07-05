@@ -163,6 +163,26 @@ describe('HDX Dataset creation tests', () => {
             .once()
             .reply(200);
 
+        nock(`${process.env.CT_URL}`)
+            .post(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}/vocabulary`, (body) => {
+                const expectedRequestBody = {
+                    legacy: {
+                        tags: [
+                            'HDX API',
+                            'Redhum Ecuador',
+                            '4w',
+                            'earthquake',
+                            'ecuador',
+                            'humanitarian'
+                        ]
+                    }
+                };
+
+                body.should.deep.equal(expectedRequestBody);
+                return true;
+            })
+            .once()
+            .reply(200);
 
         const response = await requester
             .post(`/api/v1/hdx/rest-datasets/hdx`)
@@ -237,6 +257,26 @@ describe('HDX Dataset creation tests', () => {
             .once()
             .reply(200);
 
+        nock(`${process.env.CT_URL}`)
+            .post(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}/vocabulary`, (body) => {
+                const expectedRequestBody = {
+                    legacy: {
+                        tags: [
+                            'HDX API',
+                            'Redhum Ecuador',
+                            '4w',
+                            'earthquake',
+                            'ecuador',
+                            'humanitarian'
+                        ]
+                    }
+                };
+
+                body.should.deep.equal(expectedRequestBody);
+                return true;
+            })
+            .once()
+            .reply(200);
 
         const response = await requester
             .post(`/api/v1/hdx/rest-datasets/hdx`)
@@ -307,6 +347,27 @@ describe('HDX Dataset creation tests', () => {
                 dataset: {
                     status: 1
                 }
+            })
+            .once()
+            .reply(200);
+
+        nock(`${process.env.CT_URL}`)
+            .post(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}/vocabulary`, (body) => {
+                const expectedRequestBody = {
+                    legacy: {
+                        tags: [
+                            'HDX API',
+                            'Redhum Ecuador',
+                            '4w',
+                            'earthquake',
+                            'ecuador',
+                            'humanitarian'
+                        ]
+                    }
+                };
+
+                body.should.deep.equal(expectedRequestBody);
+                return true;
             })
             .once()
             .reply(200);
@@ -382,6 +443,27 @@ describe('HDX Dataset creation tests', () => {
                 dataset: {
                     status: 1
                 }
+            })
+            .once()
+            .reply(200);
+
+        nock(`${process.env.CT_URL}`)
+            .post(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}/vocabulary`, (body) => {
+                const expectedRequestBody = {
+                    legacy: {
+                        tags: [
+                            'HDX API',
+                            'Redhum Ecuador',
+                            '4w',
+                            'earthquake',
+                            'ecuador',
+                            'humanitarian'
+                        ]
+                    }
+                };
+
+                body.should.deep.equal(expectedRequestBody);
+                return true;
             })
             .once()
             .reply(200);
