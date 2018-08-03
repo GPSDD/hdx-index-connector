@@ -18,8 +18,8 @@ that you have [Docker Compose](https://docs.docker.com/compose/install/)
 installed on your machine.
 
 ```
-git clone https://github.com/GPSDD/hdx-index-adapter.git
-cd hdx-index-adapter
+git clone https://github.com/GPSDD/hdx-index-connector.git
+cd hdx-index-connector
 ./adapter.sh develop
 ```text
 
@@ -37,9 +37,9 @@ It is necessary to define these environment variables:
 ### Cron task
 
 This component executes a periodic task that updates the metadata of each indexed RW dataset. The task is bootstrapped  
-[when the application server starts](https://github.com/GPSDD/hdx-index-adapter/blob/master/app/src/app.js#L19). 
+[when the application server starts](https://github.com/GPSDD/hdx-index-connector/blob/master/app/src/app.js#L19). 
 The task's implementation can be found on `app/src/cron/cron` and the configuration is loaded from the 
-[config files](https://github.com/GPSDD/hdx-index-adapter/blob/master/config/default.json#L18)
+[config files](https://github.com/GPSDD/hdx-index-connector/blob/master/config/default.json#L18)
 
 
 ## Field correspondence
