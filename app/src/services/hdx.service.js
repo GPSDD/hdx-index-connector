@@ -87,6 +87,8 @@ class HDXIndexService {
             }
 
             if (!hdxResource) {
+                logger.error(`${config.hdx.package}`.replace(':package-id', dataset.tableName))
+                logger.error(hdxPackageResponse.result)
                 throw new Error(`No single JSON or CSV resource found for HDX package ${dataset.tableName}`);
             }
 
