@@ -77,11 +77,11 @@ class HDXIndexService {
             let hdxResource;
             const jsonResources = hdxPackage.resources.filter(elem => elem.format.toUpperCase() === 'JSON');
 
-            if (jsonResources.length === 1) {
+            if (jsonResources.length >= 1) {
                 hdxResource = jsonResources[0];
             } else {
                 const csvResources = hdxPackageResponse.result.resources.filter(elem => elem.format.toUpperCase() === 'CSV');
-                if (csvResources.length === 1) {
+                if (csvResources.length >= 1) {
                     hdxResource = csvResources[0];
                 }
             }
