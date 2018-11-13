@@ -124,14 +124,14 @@ class HDXIndexService {
 
         } catch (err) {
             logger.error('Error obtaining metadata', err);
-
             //update dataset to be published false;
             if(hdxPackage || dataset) {
+                let name = hdxPackage ? hdxPackage.title : dataset.name;
                 await ctRegisterMicroservice.requestToMicroservice({
                     method: 'PATCH',
                     uri: `/dataset/${dataset.id}`,
                     body: {
-                        name: hdxPackage.title || dataset.name,
+                        name: name,
                         published: false,                    
                     },
                     json: true
