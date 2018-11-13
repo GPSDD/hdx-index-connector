@@ -27,6 +27,19 @@ describe('HDX fake dataset creation tests ', () => {
                 }
             });
 
+        nock(`${process.env.CT_URL}`)
+            .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
+                const expectedRequestContent = {
+                    name: 'Fake HDX package title',
+                    published: false,                    
+                };
+    
+                request.should.deep.equal(expectedRequestContent);
+                return true;
+            })
+            .once()
+            .reply(200);
+        
         // Metadata update request for fake dataset
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_FAKE_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
