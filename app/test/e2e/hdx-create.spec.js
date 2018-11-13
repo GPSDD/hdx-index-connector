@@ -46,6 +46,8 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
+                    name: "Fake HDX package title",
+                    published: false,
                     dataset: {
                         status: 2,
                         errorMessage: `Error - Error obtaining metadata: Error: No resource data associated with this HDX package was found: ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
@@ -78,6 +80,8 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
+                    name: "Fake HDX package title",
+                    published: false,
                     dataset: {
                         status: 2,
                         errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
