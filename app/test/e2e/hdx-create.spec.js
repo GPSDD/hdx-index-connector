@@ -93,6 +93,19 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
+                    name: 'Fake HDX package title',
+                    published: false,                    
+                };
+    
+                request.should.deep.equal(expectedRequestContent);
+                return true;
+            })
+            .once()
+            .reply(200);
+
+        nock(`${process.env.CT_URL}`)
+            .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
+                const expectedRequestContent = {
                     dataset: {
                         status: 2,
                         errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
@@ -505,6 +518,19 @@ describe('HDX Dataset creation tests', () => {
             .get(`/api/3/action/package_show?id=${HDX_DATASET_CREATE_REQUEST.connector.tableName}`)
             .once()
             .reply(200, singleJsonResourceRequest);
+
+        nock(`${process.env.CT_URL}`)
+            .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
+                const expectedRequestContent = {
+                    name: 'Fake HDX package title',
+                    published: false,                    
+                };
+    
+                request.should.deep.equal(expectedRequestContent);
+                return true;
+            })
+            .once()
+            .reply(200);
 
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
