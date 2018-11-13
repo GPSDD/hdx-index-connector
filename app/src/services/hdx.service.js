@@ -81,7 +81,7 @@ class HDXIndexService {
                 hdxResource = jsonResources[0];
             } else {
                 const csvResources = hdxPackageResponse.result.resources.filter(elem => elem.format.toUpperCase() === 'CSV');
-                if (csvResources.length >= 1) {
+                if (csvResources.length === 1) {
                     hdxResource = csvResources[0];
                 }
             }
@@ -126,6 +126,18 @@ class HDXIndexService {
 
         } catch (err) {
             logger.error('Error obtaining metadata', err);
+
+            //update dataset to be published false;
+            await ctRegisterMicroservice.requestToMicroservice({
+                method: 'PATCH',
+                uri: `/dataset/${dataset.id}`,
+                body: {
+                    name: hdxPackage.title || dataset.name,
+                    published: false,                    
+                },
+                json: true
+            });
+
             throw new Error(`Error obtaining metadata: ${err}`);
         }
 
