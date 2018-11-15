@@ -1,7 +1,7 @@
 {
     "logger": {
         "name": "hdx-index-adapter",
-        "level": "warn",
+        "level": "debug",
         "toFile": false,
         "dirLogFile": null
     },

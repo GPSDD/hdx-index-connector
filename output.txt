@@ -1,0 +1,7 @@
+Running Start
+
+> hdx-adapter@1.1.0 start /opt/hdx-index-adapter
+> NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
+
+  <-- GET /info
+  --> GET /info 200 9ms 1.62kb
