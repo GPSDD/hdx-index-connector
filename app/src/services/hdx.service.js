@@ -139,7 +139,7 @@ class HDXIndexService {
                     json: true
                 });    
                 logger.debug(`setting dataset: ${dataset.id} publish to false ${result}`)
-                logger.debug(`${result}`)
+                logger.debug(result)
             }
 
             throw new Error(`Error obtaining metadata: ${err}`);
