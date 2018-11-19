@@ -46,8 +46,7 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
-                    name: 'Fake HDX package title',
-                    published: false,                    
+                    published: false
                 };
     
                 request.should.deep.equal(expectedRequestContent);
@@ -93,8 +92,7 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
-                    name: 'Fake HDX package title',
-                    published: false,                    
+                    published: false                    
                 };
     
                 request.should.deep.equal(expectedRequestContent);
@@ -522,8 +520,7 @@ describe('HDX Dataset creation tests', () => {
         nock(`${process.env.CT_URL}`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
-                    name: 'Fake HDX package title',
-                    published: false,                    
+                    published: false
                 };
     
                 request.should.deep.equal(expectedRequestContent);
