@@ -134,7 +134,8 @@ class HDXIndexService {
                         published: false 
                     },
                     headers: {
-                        Authorization: `Bearer ${process.env.CT_TOKEN}`    
+                        Authorization: `Bearer ${process.env.CT_TOKEN}`,
+                        "content-type": "application/json" 
                     },  
                     json: true
                 });    
