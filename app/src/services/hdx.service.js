@@ -130,10 +130,10 @@ class HDXIndexService {
                     method: 'PATCH',
                     url: `https://api.apihighways.org/v1/dataset/${dataset.id}`,
                     body: {
-                        published: false 
+                        published: false
                     },
                     headers: {
-                        Authorization: `Bearer ${process.env.CT_TOKEN}`,
+                        Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViNzFjZGQzYTYwZTFkNTdmZjVlNzRhYSIsInJvbGUiOiJBRE1JTiIsInByb3ZpZGVyIjoibG9jYWwiLCJlbWFpbCI6ImFwaWhpZ2h3YXlzQGRhdGE0c2Rncy5vcmciLCJleHRyYVVzZXJEYXRhIjp7ImFwcHMiOlsiZGF0YTRzZGdzIl19LCJjcmVhdGVkQXQiOjE1NDA1OTI4NjIyNjYsImlhdCI6MTU0MDU5Mjg2Mn0.S92xKfgEpLihnB-QGEuoSk8Vc2i0An42QEkpmsB1sJQ`,
                         "content-type": "application/json" 
                     },  
                     json: true
