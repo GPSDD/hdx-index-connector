@@ -126,7 +126,7 @@ class HDXIndexService {
             logger.error('Error obtaining metadata', err);
             //update dataset to be published false;
             if(dataset) {
-                logger.debug(`setting dataset: ${dataset.id} publish to false ${process.env.CT_URL}`)
+                logger.debug(`setting dataset: ${dataset.id} publish to false ${process.env.CT_TOKEN}`)
                 await requestPromise({
                     method: 'PATCH',
                     url: `https://api.apihighways.org/v1/dataset/${dataset.id}`,
@@ -134,7 +134,7 @@ class HDXIndexService {
                         published: false 
                     },
                     headers: {
-                        Authorization: `Bearer ${process.env.CT_TOKEN}`,
+                        Authorization: `${process.env.CT_TOKEN}`,
                         "content-type": "application/json" 
                     },  
                     json: true
