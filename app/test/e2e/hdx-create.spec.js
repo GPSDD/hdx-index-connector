@@ -43,7 +43,7 @@ describe('HDX Dataset creation tests', () => {
             .once()
             .reply(200, singleJsonResourceRequest);
 
-        nock(`${process.env.CT_URL}`)
+        nock(`https://api.apihighways.org`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
                     published: false
@@ -89,7 +89,7 @@ describe('HDX Dataset creation tests', () => {
             .once()
             .reply(200, singleJsonResourceRequest);
 
-        nock(`${process.env.CT_URL}`)
+        nock(`https://api.apihighways.org`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
                     published: false                    
@@ -517,7 +517,7 @@ describe('HDX Dataset creation tests', () => {
             .once()
             .reply(200, singleJsonResourceRequest);
 
-        nock(`${process.env.CT_URL}`)
+        nock(`https://api.apihighways.org`)
             .patch(`/v1/dataset/${HDX_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
                     published: false

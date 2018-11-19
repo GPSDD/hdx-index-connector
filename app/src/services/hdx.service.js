@@ -127,22 +127,14 @@ class HDXIndexService {
             //update dataset to be published false;
             if(dataset) {
                 logger.debug(`setting dataset: ${dataset.id} publish to false ${process.env.CT_URL}`)
-                await ctRegisterMicroservice.requestToMicroservice({
+                await requestPromise({
                     method: 'PATCH',
-                    uri: `/dataset/${dataset.id}`,
+                    url: `https://api.apihighways.org/v1/dataset/${dataset.id}`,
                     body: {
                         published: false 
                     },
                     json: true
                 });    
-                // await requestPromise({
-                //     method: 'PATCH',
-                //     url: `/dataset/${dataset.id}`,
-                //     body: {
-                //         published: false 
-                //     },
-                //     json: true
-                // });    
             }
 
             throw new Error(`Error obtaining metadata: ${err}`);

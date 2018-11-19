@@ -27,7 +27,7 @@ describe('HDX fake dataset creation tests ', () => {
                 }
             });
 
-        nock(`${process.env.CT_URL}`)
+        nock(`https://api.apihighways.org/v1`)
             .patch(`/v1/dataset/${HDX_FAKE_DATASET_CREATE_REQUEST.connector.id}`, (request) => {
                 const expectedRequestContent = {
                     published: false
