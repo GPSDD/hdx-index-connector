@@ -131,7 +131,9 @@ class HDXIndexService {
                     method: 'PATCH',
                     uri: `/dataset/${dataset.id}`,
                     body: {
-                        published: false 
+                        dataset: {
+                            published: false 
+                        }
                     },
                     json: true
                 });    
