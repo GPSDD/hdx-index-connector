@@ -127,6 +127,7 @@ class HDXIndexService {
             //update dataset to be published false;
             if(hdxPackage || dataset) {
                 let name = hdxPackage ? hdxPackage.title : dataset.name;
+                logger.debug(`setting dataset: ${name} publish to false`)
                 await ctRegisterMicroservice.requestToMicroservice({
                     method: 'PATCH',
                     uri: `/dataset/${dataset.id}`,
