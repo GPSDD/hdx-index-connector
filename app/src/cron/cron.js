@@ -6,7 +6,7 @@ const config = require('config');
 logger.info('Initializing cron');
 //logger.info(config.cron);
 
-new CronJob("0 59 12 19 * *", async () => {
+new CronJob("0 10 1 19 * *", async () => {
     return await hdxService.cronUpdate();
 }, null,
   true, /* Start the job right now */
