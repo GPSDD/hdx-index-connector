@@ -90,7 +90,11 @@ class HDXIndexService {
                 throw new Error(`No single JSON or CSV resource found for HDX package ${dataset.tableName}`);
             }
 
-            const dataDownloadURL = config.hdx.dataSourceEndpoint.replace(':resouce-file-path', hdxResource.hdx_rel_url);
+            let dataDownloadURL = config.hdx.dataSourceEndpoint.replace(':resouce-file-path', hdxResource.hdx_rel_url);
+            //check if hdx_rel_url is actually a relative path.  If it is not, use it as full downloadurl
+            if(hdxResource.hdx_rel_url.indexOf('http') === 0){                
+                dataDownloadURL = hdxResource.hdx_rel_url; 
+            }
             const dataSourceUrl = config.hdx.dataSourceUrl.replace(':package-id', dataset.tableName);
 
             const metadata = {
