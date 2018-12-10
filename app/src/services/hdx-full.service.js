@@ -159,6 +159,8 @@ class HDXFullIndexService {
         if(!result){
           return;    
         }
+        logger.debug('new dataset');
+        logger.debug(result);
         let dataset_id = result.id
         let status = 'pending'
       

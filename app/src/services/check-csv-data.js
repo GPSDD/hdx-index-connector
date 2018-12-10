@@ -1,3 +1,4 @@
+const logger = require('logger');
 const requestPromise = require('request-promise');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
 
@@ -12,11 +13,12 @@ class CheckData {
 
     if (!get_result)
     { //dataset doesn't exist...let's skip
+      logger.log('dataset does not exist in csv format')
       return false;
     }
       
     if(get_result.indexOf('DOCTYPE_html') > -1) {
-      console.log('invalid data')
+      logger.log('invalid data')
       return false;
     }
 
@@ -26,8 +28,9 @@ class CheckData {
       url: hdxUrl,
     });    
     let newlineRegex = new RegExp('\\r\\n|\\n','g'); 
-    if(result.match(newlineRegex).length === get_result.match(newlineRegex)) {
-      console.log('data valid')
+    logger.log(`hdx csv rows ${result.match(newlineRegex).length}`)
+    logger.log(`api highways csv rows ${get_result.match(newlineRegex).length}`)
+    if(result.match(newlineRegex).length === get_result.match(newlineRegex).length) {
       return true;  
     }
     return false;
