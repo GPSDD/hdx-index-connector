@@ -67,11 +67,11 @@ class HDXIndexService {
             if (hdxPackageResponse && hdxPackageResponse.result && hdxPackageResponse.result.resources) {
                 hdxPackage = hdxPackageResponse.result;
             } else {
-                throw new Error(`Incomplete or invalid data loaded from HDX API: ${dataset.tableName}`);
+                throw new Error(`Incomplete or invalid data loaded from HDX API`);
             }
 
             if (hdxPackage.resources.length === 0) {
-                throw new Error(`No resource data associated with this HDX package was found: ${dataset.tableName}`);
+                throw new Error(`No resource data associated with this HDX package was found`);
             }
 
             let hdxResource;
@@ -87,7 +87,7 @@ class HDXIndexService {
             }
 
             if (!hdxResource) {
-                throw new Error(`No single JSON or CSV resource found for HDX package ${dataset.tableName}`);
+                throw new Error(`No single JSON or CSV resource found for HDX package`);
             }
 
             let dataDownloadURL = config.hdx.dataSourceEndpoint.replace(':resouce-file-path', hdxResource.hdx_rel_url);
