@@ -161,7 +161,7 @@ class HDXFullIndexService {
         }
         logger.debug('new dataset');
         logger.debug(result);
-        let dataset_id = result.id
+        let dataset_id = result.data.id
         let status = 'pending'
       
         while (status == 'pending'){
@@ -171,7 +171,7 @@ class HDXFullIndexService {
             uri: `/dataset/${dataset_id}`,
             json: true
           });
-          status = get_result.attributes.status;
+          status = get_result.data.attributes.status;
           if (status == 'pending') {
             logger.debug('Sleeping...')
             await timeout(4000)
