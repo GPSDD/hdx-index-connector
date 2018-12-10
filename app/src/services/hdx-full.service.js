@@ -48,7 +48,7 @@ class HDXFullIndexService {
                 url: 'https://data.humdata.org/api/action/package_search?&fq=(res_format:JSON%20OR%20res_format:CSV)%20AND%20groups:yem',
                 json: true
             });
-            let humData = hdxPackageResponse.data.result;
+            let humData = hdxPackageResponse.result;
             let hdxResponse = await ctRegisterMicroservice.requestToMicroservice({
                 method: 'GET',
                 uri: `/dataset/provider=hdx&page[size]=10000`,

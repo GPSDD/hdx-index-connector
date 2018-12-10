@@ -3,15 +3,20 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-10T20:18:48.679Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-10T20:18:48.704Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-10T20:18:48.705Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-10T20:18:48.737Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-10T20:18:48.741Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-10T20:18:48.743Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-10T20:18:48.743Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-10T20:29:30.726Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-10T20:29:30.748Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-10T20:29:30.750Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-10T20:29:30.796Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-10T20:29:30.801Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-10T20:29:30.803Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-10T20:29:30.803Z","v":0}
   <-- GET /info
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-10T20:18:48.839Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-10T20:18:48.839Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-10T20:29:30.926Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-10T20:29:30.926Z","v":0}
   --> GET /info 200 9ms 1.62kb
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-5dddf5b444-d45cs","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-10T20:18:48.969Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-10T20:29:31.031Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-10T20:31:00.845Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-10T20:31:00.845Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-64475bb5c8-rhzdv","pid":17,"level":50,"msg":"Error in cron update TypeError: Cannot read property 'result' of undefined\n    at Function.cronUpdate (/opt/hdx-index-adapter/app/src/services/hdx-full.service.js:51:50)","time":"2018-12-10T20:31:01.751Z","v":0}
+(node:17) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): TypeError: Cannot read property 'result' of undefined
+(node:17) DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
