@@ -36,10 +36,6 @@ hdx: {
 }
 }
 
-const config = {
-    headers: {'User-Agent': 'python-requests', 'Content-Type': 'application/json'}
-};
-  
 class HDXFullIndexService {
 
     static async cronUpdate() {
