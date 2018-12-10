@@ -149,7 +149,7 @@ class HDXFullIndexService {
             ],        
             "published": false
         };
-        await ctRegisterMicroservice.requestToMicroservice({
+        let result = await ctRegisterMicroservice.requestToMicroservice({
             method: 'POST',
             uri: `/dataset`,
             body,
@@ -159,7 +159,7 @@ class HDXFullIndexService {
         if(!result){
           return;    
         }
-        let dataset_id = result.data.id
+        let dataset_id = result.id
         let status = 'pending'
       
         while (status == 'pending'){
@@ -169,7 +169,7 @@ class HDXFullIndexService {
             uri: `/dataset/${dataset_id}`,
             json: true
           });
-          status = get_result.data.attributes.status;
+          status = get_result.attributes.status;
           if (status == 'pending') {
             logger.debug('Sleeping...')
             await timeout(4000)
