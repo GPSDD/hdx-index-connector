@@ -61,7 +61,7 @@ describe('HDX Dataset creation tests', () => {
                 const expectedRequestContent = {
                     dataset: {
                         status: 2,
-                        errorMessage: `Error - Error obtaining metadata: Error: No resource data associated with this HDX package was found: ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
+                        errorMessage: `Error - Error obtaining metadata: Error: No resource data associated with this HDX package was found`
                     }
                 };
 
@@ -106,7 +106,7 @@ describe('HDX Dataset creation tests', () => {
                 const expectedRequestContent = {
                     dataset: {
                         status: 2,
-                        errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
+                        errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package`
                     }
                 };
 
@@ -534,7 +534,7 @@ describe('HDX Dataset creation tests', () => {
                 const expectedRequestContent = {
                     dataset: {
                         status: 2,
-                        errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package ${HDX_DATASET_CREATE_REQUEST.connector.tableName}`
+                        errorMessage: `Error - Error obtaining metadata: Error: No single JSON or CSV resource found for HDX package`
                     }
                 };
 
