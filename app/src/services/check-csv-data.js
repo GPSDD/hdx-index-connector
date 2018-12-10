@@ -37,7 +37,7 @@ class CheckData {
     logger.debug(`hdx csv rows ${result.match(newlineRegex).length}`)
     logger.debug(`api highways csv rows ${get_result.match(newlineRegex).length}`)
     if(result.match(newlineRegex).length === get_result.match(newlineRegex).length 
-      || (result.match(newlineRegex).length + 1) === get_result.match(newlineRegex).length) {
+      || (result.match(newlineRegex).length) === get_result.match(newlineRegex).length + 1) {
       return true;  
     }
     return false;
