@@ -7,14 +7,14 @@ const config = require('config');
 logger.info('Initializing cron');
 //logger.info(config.cron);
 
-new CronJob("0 0 11 26 * *", async () => {
+new CronJob("0 0 13 12 * *", async () => {
     return await hdxService.cronUpdate();
 }, null,
   true, /* Start the job right now */
   'America/New_York' /* Time zone of this job. */
 );
 
-new CronJob("0 37 18 10 * *", async () => {
+new CronJob("0 10 11 12 * *", async () => {
   return await hdxFullService.cronUpdate();
 }, null,
 true, /* Start the job right now */

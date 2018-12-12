@@ -45,7 +45,7 @@ class HDXFullIndexService {
             logger.debug('Obtaining datasets');
             const hdxPackageResponse = await requestPromise({
                 method: 'GET',
-                url: 'https://data.humdata.org/api/action/package_search?&fq=(res_format:JSON%20OR%20res_format:CSV)%20AND%20groups:yem',
+                url: 'https://data.humdata.org/api/action/package_search?&fq=(res_format:JSON%20OR%20res_format:CSV)%20AND%20groups:yem&start=1&rows=100',
                 json: true
             });
             let humData = hdxPackageResponse.result;
