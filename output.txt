@@ -3,15 +3,321 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":30,"msg":"Initializing cron","time":"2018-12-13T14:15:14.680Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":20,"msg":"Loading routes...","time":"2018-12-13T14:15:14.706Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-13T14:15:14.708Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-13T14:15:14.767Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":30,"msg":"Server started in  3012","time":"2018-12-13T14:15:14.770Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":30,"msg":"Initializing register microservice","time":"2018-12-13T14:15:14.774Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":20,"msg":"Checking mode","time":"2018-12-13T14:15:14.774Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-13T14:20:11.918Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-13T14:20:11.941Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-13T14:20:11.943Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-13T14:20:11.970Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-13T14:20:11.975Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-13T14:20:11.977Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-13T14:20:11.977Z","v":0}
   <-- GET /info
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":30,"msg":"Entering with path /info","time":"2018-12-13T14:15:14.862Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-13T14:15:14.862Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-13T14:20:12.291Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-13T14:20:12.291Z","v":0}
   --> GET /info 200 9ms 1.62kb
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bd848dbc-dvclk","pid":16,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-13T14:15:14.953Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-13T14:20:12.402Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-13T14:22:01.035Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-13T14:22:01.036Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:22:02.391Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:22:12.108Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:22:12.380Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":40,"msg":"dataset does not exist in csv format","time":"2018-12-13T14:23:13.701Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":40,"msg":"Dataset Global Food Prices Database (WFP) with id cc82615b-d991-4867-bcb1-46e11c9f3b64 exists, but data is corrupted...Deleting and re-adding","time":"2018-12-13T14:23:13.701Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:13.701Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Adding dataset Global Food Prices Database (WFP)","time":"2018-12-13T14:23:15.155Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:15.155Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"new dataset","time":"2018-12-13T14:23:15.269Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"data":{"id":"a985fa9e-e0d7-4ac0-bd05-f35099ddf02d","type":"dataset","attributes":{"name":"Global Food Prices Database (WFP)","slug":"Global-Food-Prices-Database-WFP_3","type":null,"dataPath":null,"attributesPath":null,"connectorType":"document","provider":"csv","userId":"microservice","connectorUrl":"http://data.humdata.org/dataset/4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27/resource/12d7c8e3-eff9-4db0-93b7-726825c4fe9a/download/wfpvam_foodprices.csv","tableName":null,"status":"pending","published":false,"sandbox":false,"overwrite":false,"verified":false,"blockchain":{},"subscribable":{},"env":"production","geoInfo":false,"protected":false,"legend":{"date":[],"region":[],"country":[],"nested":[]},"clonedHost":{},"errorMessage":null,"taskId":null,"createdAt":"2018-12-13T14:23:15.205Z","updatedAt":"2018-12-13T14:23:15.205Z"}},"msg":"","time":"2018-12-13T14:23:15.269Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:15.269Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:15.293Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:19.295Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:19.324Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:23.329Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:23.359Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:27.363Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:27.390Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:31.392Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:31.417Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:35.423Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:35.446Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:39.449Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:39.472Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:43.477Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:43.498Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:47.502Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:47.533Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:51.534Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:51.557Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:55.561Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:55.584Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:23:59.588Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:23:59.612Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:03.616Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:03.642Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:07.645Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:07.667Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:11.669Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:11.695Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:15.695Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:15.784Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:19.789Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:19.815Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:23.820Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:23.841Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:27.845Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:27.874Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:31.879Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:31.900Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:35.905Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:35.927Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:39.932Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:39.954Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:43.957Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:43.982Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:47.982Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:48.012Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:52.014Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:52.052Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:24:56.060Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:24:56.088Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:00.092Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:00.120Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:04.123Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:04.146Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:08.150Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:08.171Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:12.177Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:12.200Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:16.205Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:16.340Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:20.344Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:20.366Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:24.371Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:24.392Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:28.393Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:28.430Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:32.435Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:32.461Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:36.465Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:36.486Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:40.489Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:40.513Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:44.517Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:44.540Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:48.545Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:48.568Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:52.571Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:52.593Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:25:56.595Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:25:56.617Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:00.621Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:00.650Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:04.653Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:04.676Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:08.678Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:08.714Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:12.716Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:12.737Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:16.742Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:16.867Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:20.872Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:20.892Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:24.895Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:24.965Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:28.966Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:28.991Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:32.995Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:33.018Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:37.020Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:37.044Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:41.048Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:41.069Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:45.073Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:45.095Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:49.100Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:49.121Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:53.126Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:53.151Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:26:57.153Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:26:57.197Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:01.200Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:01.224Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:05.229Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:05.257Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:09.272Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:09.298Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:13.301Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:13.325Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:17.329Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:17.371Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:21.376Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:21.396Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:25.400Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:25.423Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:29.426Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:29.448Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:33.451Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:33.470Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:37.475Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:37.496Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:41.500Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:41.524Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:45.529Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:45.556Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:49.558Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:49.580Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:53.584Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:53.615Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:27:57.620Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:27:57.640Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:01.644Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:01.666Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:05.685Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:05.705Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:09.709Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:09.732Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:13.736Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:13.755Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:17.756Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:17.875Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:21.877Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:21.919Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:25.924Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:25.948Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:29.951Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:29.974Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:33.978Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:34.005Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:38.008Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:38.033Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:42.038Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:42.061Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:46.064Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:46.084Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:50.085Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:50.131Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:54.135Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:54.160Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:28:58.164Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:28:58.190Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:02.190Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:02.213Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:06.215Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:06.237Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:10.240Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:10.264Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:14.265Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:14.290Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:18.291Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:18.439Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:22.444Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:22.466Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:26.471Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:26.493Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:30.497Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:30.518Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:34.521Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:34.543Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:38.547Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:38.570Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:42.571Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:42.594Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:46.597Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:46.618Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:50.620Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:50.644Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:54.648Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:54.672Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:29:58.677Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:29:58.696Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:02.700Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:02.740Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:06.743Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:06.763Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:10.764Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:10.784Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:14.786Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:14.807Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:18.811Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:18.834Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:22.839Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:22.862Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:26.865Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:26.931Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:30.932Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:30.956Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:34.960Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:34.983Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:38.988Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:39.010Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:43.014Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:43.036Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:47.040Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:47.061Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:51.064Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:51.085Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:55.086Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:55.109Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:30:59.114Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:30:59.137Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:03.139Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:03.160Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:07.163Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:07.184Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:11.187Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:11.242Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:15.246Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:15.267Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:19.274Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:19.358Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:23.363Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:23.388Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:27.392Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:27.416Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:31.419Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:31.461Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:35.465Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:35.512Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:39.516Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:39.538Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:43.540Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:43.561Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:47.568Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:47.591Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:51.596Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:51.621Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:55.625Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:55.647Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:31:59.649Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:31:59.670Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:03.675Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:03.695Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:07.700Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:07.721Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:11.726Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:11.747Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:15.751Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:15.773Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:19.777Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:19.870Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:23.871Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:23.892Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:27.896Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:27.918Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:31.918Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-13T14:32:31.941Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:35.943Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"dataset saved - updating vocab/tags","time":"2018-12-13T14:32:35.978Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:35.978Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:37.831Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:38.078Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"hdx csv rows 19065","time":"2018-12-13T14:32:43.550Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"api highways csv rows 19064","time":"2018-12-13T14:32:43.557Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Dataset Yemen - Food Prices with id 9d29396d-9aeb-4cdc-8e09-74966831445f already exists, skipping...","time":"2018-12-13T14:32:43.577Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:43.628Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"hdx csv rows 992","time":"2018-12-13T14:32:44.973Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":20,"msg":"api highways csv rows 991","time":"2018-12-13T14:32:44.974Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Dataset Yemen - Food Median Prices with id 55114492-01f8-455b-bf23-e741d2221029 already exists, skipping...","time":"2018-12-13T14:32:44.975Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-13T14:32:45.078Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-868f98c5db-7687q","pid":17,"level":50,"msg":"Error in cron update { StatusCodeError: 500 - \"{\\n    \\\"error\\\": \\\"UnicodeDecodeError\\\",\\n    \\\"message\\\": \\\"'utf-8' codec can't decode byte 0xf4 in position 5024: invalid continuation byte\\\",\\n    \\\"status\\\": 500\\n}\"\n    at new StatusCodeError (/opt/hdx-index-adapter/node_modules/request-promise-core/lib/errors.js:32:15)\n    at Request.plumbing.callback (/opt/hdx-index-adapter/node_modules/request-promise-core/lib/plumbing.js:104:33)\n    at Request.RP$callback [as _callback] (/opt/hdx-index-adapter/node_modules/request-promise-core/lib/plumbing.js:46:31)\n    at Request.self.callback (/opt/hdx-index-adapter/node_modules/request/request.js:185:22)\n    at emitTwo (events.js:106:13)\n    at Request.emit (events.js:192:7)\n    at Request.<anonymous> (/opt/hdx-index-adapter/node_modules/request/request.js:1157:10)\n    at emitOne (events.js:96:13)\n    at Request.emit (events.js:189:7)\n    at IncomingMessage.<anonymous> (/opt/hdx-index-adapter/node_modules/request/request.js:1079:12)\n    at Object.onceWrapper (events.js:291:19)\n    at emitNone (events.js:91:20)\n    at IncomingMessage.emit (events.js:186:7)\n    at endReadableNT (_stream_readable.js:974:12)\n    at _combinedTickCallback (internal/process/next_tick.js:74:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)\n  name: 'StatusCodeError',\n  statusCode: 500,\n  message: '500 - \"{\\\\n    \\\\\"error\\\\\": \\\\\"UnicodeDecodeError\\\\\",\\\\n    \\\\\"message\\\\\": \\\\\"\\'utf-8\\' codec can\\'t decode byte 0xf4 in position 5024: invalid continuation byte\\\\\",\\\\n    \\\\\"status\\\\\": 500\\\\n}\"',\n  error: '{\\n    \"error\": \"UnicodeDecodeError\",\\n    \"message\": \"\\'utf-8\\' codec can\\'t decode byte 0xf4 in position 5024: invalid continuation byte\",\\n    \"status\": 500\\n}',\n  options: \n   { method: 'GET',\n     url: 'http://proxy.hxlstandard.org/data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen',\n     callback: [Function: RP$callback],\n     transform: undefined,\n     simple: true,\n     resolveWithFullResponse: false,\n     transform2xxOnly: false },\n  response: \n   IncomingMessage {\n     _readableState: \n      ReadableState {\n        objectMode: false,\n        highWaterMark: 16384,\n        buffer: [Object],\n        length: 0,\n        pipes: null,\n        pipesCount: 0,\n        flowing: true,\n        ended: true,\n        endEmitted: true,\n        reading: false,\n        sync: true,\n        needReadable: false,\n        emittedReadable: false,\n        readableListening: false,\n        resumeScheduled: false,\n        defaultEncoding: 'utf8',\n        ranOut: false,\n        awaitDrain: 0,\n        readingMore: false,\n        decoder: null,\n        encoding: null },\n     readable: false,\n     domain: null,\n     _events: \n      { end: [Object],\n        close: [Object],\n        data: [Function],\n        error: [Function] },\n     _eventsCount: 4,\n     _maxListeners: undefined,\n     socket: \n      TLSSocket {\n        _tlsOptions: [Object],\n        _secureEstablished: true,\n        _securePending: false,\n        _newSessionPending: false,\n        _controlReleased: true,\n        _SNICallback: null,\n        servername: null,\n        npnProtocol: undefined,\n        alpnProtocol: false,\n        authorized: true,\n        authorizationError: null,\n        encrypted: true,\n        _events: [Object],\n        _eventsCount: 9,\n        connecting: false,\n        _hadError: false,\n        _handle: null,\n        _parent: null,\n        _host: 'proxy.hxlstandard.org',\n        _readableState: [Object],\n        readable: false,\n        domain: null,\n        _maxListeners: undefined,\n        _writableState: [Object],\n        writable: false,\n        allowHalfOpen: false,\n        destroyed: true,\n        _bytesDispatched: 364,\n        _sockname: null,\n        _pendingData: null,\n        _pendingEncoding: '',\n        server: undefined,\n        _server: null,\n        ssl: null,\n        _requestCert: true,\n        _rejectUnauthorized: true,\n        parser: null,\n        _httpMessage: [Object],\n        read: [Function],\n        _consuming: true,\n        _idleNext: null,\n        _idlePrev: null,\n        _idleTimeout: -1 },\n     connection: \n      TLSSocket {\n        _tlsOptions: [Object],\n        _secureEstablished: true,\n        _securePending: false,\n        _newSessionPending: false,\n        _controlReleased: true,\n        _SNICallback: null,\n        servername: null,\n        npnProtocol: undefined,\n        alpnProtocol: false,\n        authorized: true,\n        authorizationError: null,\n        encrypted: true,\n        _events: [Object],\n        _eventsCount: 9,\n        connecting: false,\n        _hadError: false,\n        _handle: null,\n        _parent: null,\n        _host: 'proxy.hxlstandard.org',\n        _readableState: [Object],\n        readable: false,\n        domain: null,\n        _maxListeners: undefined,\n        _writableState: [Object],\n        writable: false,\n        allowHalfOpen: false,\n        destroyed: true,\n        _bytesDispatched: 364,\n        _sockname: null,\n        _pendingData: null,\n        _pendingEncoding: '',\n        server: undefined,\n        _server: null,\n        ssl: null,\n        _requestCert: true,\n        _rejectUnauthorized: true,\n        parser: null,\n        _httpMessage: [Object],\n        read: [Function],\n        _consuming: true,\n        _idleNext: null,\n        _idlePrev: null,\n        _idleTimeout: -1 },\n     httpVersionMajor: 1,\n     httpVersionMinor: 1,\n     httpVersion: '1.1',\n     complete: true,\n     headers: \n      { server: 'nginx',\n        date: 'Thu, 13 Dec 2018 14:32:46 GMT',\n        'content-type': 'application/json',\n        'content-length': '155',\n        connection: 'close',\n        'access-control-allow-origin': '*',\n        'set-cookie': [Object] },\n     rawHeaders: \n      [ 'Server',\n        'nginx',\n        'Date',\n        'Thu, 13 Dec 2018 14:32:46 GMT',\n        'Content-Type',\n        'application/json',\n        'Content-Length',\n        '155',\n        'Connection',\n        'close',\n        'Access-Control-Allow-Origin',\n        '*',\n        'Set-Cookie',\n        '__bm-hap_hKBc8trARn9rSZDW=S1; path=/; HttpOnly; Secure' ],\n     trailers: {},\n     rawTrailers: [],\n     upgrade: false,\n     url: '',\n     method: null,\n     statusCode: 500,\n     statusMessage: 'INTERNAL SERVER ERROR',\n     client: \n      TLSSocket {\n        _tlsOptions: [Object],\n        _secureEstablished: true,\n        _securePending: false,\n        _newSessionPending: false,\n        _controlReleased: true,\n        _SNICallback: null,\n        servername: null,\n        npnProtocol: undefined,\n        alpnProtocol: false,\n        authorized: true,\n        authorizationError: null,\n        encrypted: true,\n        _events: [Object],\n        _eventsCount: 9,\n        connecting: false,\n        _hadError: false,\n        _handle: null,\n        _parent: null,\n        _host: 'proxy.hxlstandard.org',\n        _readableState: [Object],\n        readable: false,\n        domain: null,\n        _maxListeners: undefined,\n        _writableState: [Object],\n        writable: false,\n        allowHalfOpen: false,\n        destroyed: true,\n        _bytesDispatched: 364,\n        _sockname: null,\n        _pendingData: null,\n        _pendingEncoding: '',\n        server: undefined,\n        _server: null,\n        ssl: null,\n        _requestCert: true,\n        _rejectUnauthorized: true,\n        parser: null,\n        _httpMessage: [Object],\n        read: [Function],\n        _consuming: true,\n        _idleNext: null,\n        _idlePrev: null,\n        _idleTimeout: -1 },\n     _consuming: true,\n     _dumped: false,\n     req: \n      ClientRequest {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 5,\n        _maxListeners: undefined,\n        output: [],\n        outputEncodings: [],\n        outputCallbacks: [],\n        outputSize: 0,\n        writable: true,\n        _last: true,\n        upgrading: false,\n        chunkedEncoding: false,\n        shouldKeepAlive: false,\n        useChunkedEncodingByDefault: false,\n        sendDate: false,\n        _removedHeader: {},\n        _contentLength: 0,\n        _hasBody: true,\n        _trailer: '',\n        finished: true,\n        _headerSent: true,\n        socket: [Object],\n        connection: [Object],\n        _header: 'GET /data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen HTTP/1.1\\r\\nreferer: http://proxy.hxlstandard.org/data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen\\r\\nhost: proxy.hxlstandard.org\\r\\nConnection: close\\r\\n\\r\\n',\n        _headers: [Object],\n        _headerNames: [Object],\n        _onPendingData: null,\n        agent: [Object],\n        socketPath: undefined,\n        timeout: undefined,\n        method: 'GET',\n        path: '/data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen',\n        _ended: true,\n        res: [Circular],\n        aborted: undefined,\n        timeoutCb: null,\n        upgradeOrConnect: false,\n        parser: null,\n        maxHeadersCount: null },\n     request: \n      Request {\n        domain: null,\n        _events: [Object],\n        _eventsCount: 5,\n        _maxListeners: undefined,\n        method: 'GET',\n        readable: true,\n        writable: true,\n        explicitMethod: true,\n        _qs: [Object],\n        _auth: [Object],\n        _oauth: [Object],\n        _multipart: [Object],\n        _redirect: [Object],\n        _tunnel: [Object],\n        _rp_resolve: [Function],\n        _rp_reject: [Function],\n        _rp_promise: [Object],\n        _rp_callbackOrig: undefined,\n        callback: [Function],\n        _rp_options: [Object],\n        headers: [Object],\n        setHeader: [Function],\n        hasHeader: [Function],\n        getHeader: [Function],\n        removeHeader: [Function],\n        localAddress: undefined,\n        pool: {},\n        dests: [],\n        __isRequestRequest: true,\n        _callback: [Function: RP$callback],\n        uri: [Object],\n        proxy: null,\n        tunnel: true,\n        setHost: true,\n        originalCookieHeader: undefined,\n        _disableCookies: true,\n        _jar: undefined,\n        port: 443,\n        host: 'proxy.hxlstandard.org',\n        path: '/data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen',\n        httpModule: [Object],\n        agentClass: [Object],\n        href: 'https://proxy.hxlstandard.org/data.csv?url=http%3A//popstats.unhcr.org/en/persons_of_concern.hxl&filter01=select&select-query01-01=%23country%2Bresidence=Yemen',\n        ntick: true,\n        response: [Circular],\n        originalHost: 'proxy.hxlstandard.org',\n        originalHostHeaderName: 'host',\n        agent: [Object],\n        _started: true,\n        req: [Object],\n        responseContent: [Circular],\n        _destdata: true,\n        _ended: true,\n        _callbackCalled: true },\n     toJSON: [Function: responseToJSON],\n     caseless: Caseless { dict: [Object] },\n     read: [Function],\n     body: '{\\n    \"error\": \"UnicodeDecodeError\",\\n    \"message\": \"\\'utf-8\\' codec can\\'t decode byte 0xf4 in position 5024: invalid continuation byte\",\\n    \"status\": 500\\n}' } }","time":"2018-12-13T14:32:46.315Z","v":0}
+(node:17) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): StatusCodeError: 500 - "{\n    \"error\": \"UnicodeDecodeError\",\n    \"message\": \"'utf-8' codec can't decode byte 0xf4 in position 5024: invalid continuation byte\",\n    \"status\": 500\n}"
+(node:17) DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.

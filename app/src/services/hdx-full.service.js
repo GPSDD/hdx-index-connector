@@ -115,23 +115,28 @@ class HDXFullIndexService {
           }
           else {
             //dataset exists, let's check the data and make sure data is fine 
-            let dataIsValid = await CheckData.checkCSVData(csv.id, dataset.url);
-            if(dataIsValid) {
-              logger.info('Dataset ' + dataset.name + ` with id ${csv.id} already exists, skipping...`);
-              return;    
-            }
-            else {
-                logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted...Deleting and re-adding`);
-                try {
-                    await ctRegisterMicroservice.requestToMicroservice({
-                        method: 'DELETE',
-                        uri: `/dataset/${csv.id}`,
-                        json: true
-                    });    
-                } catch (ex) {
-                    logger.warn(`unable to delete dataset: ${csv.id}`)
-                    return;    
+            try {
+                let dataIsValid = await CheckData.checkCSVData(csv.id, dataset.url);
+                if(dataIsValid) {
+                  logger.info('Dataset ' + dataset.name + ` with id ${csv.id} already exists, skipping...`);
+                  return;    
                 }
+                else {
+                    logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted...Deleting and re-adding`);
+                    try {
+                        await ctRegisterMicroservice.requestToMicroservice({
+                            method: 'DELETE',
+                            uri: `/dataset/${csv.id}`,
+                            json: true
+                        });    
+                    } catch (ex) {
+                        logger.warn(`unable to delete dataset: ${csv.id}`)
+                        return;    
+                    }
+                }    
+            } catch (ex) {
+                console.warn("Unable to read csv file");
+                return;
             }
           }
         }

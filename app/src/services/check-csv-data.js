@@ -29,18 +29,25 @@ class CheckData {
     }
 
     //compare with hdx data
-    let result = await requestPromise({
-      method: 'GET',
-      url: hdxUrl,
-    });    
-    let newlineRegex = new RegExp('\\r\\n|\\n','g'); 
-    logger.debug(`hdx csv rows ${result.match(newlineRegex).length}`)
-    logger.debug(`api highways csv rows ${get_result.match(newlineRegex).length}`)
-    if(result.match(newlineRegex).length === get_result.match(newlineRegex).length 
-      || (result.match(newlineRegex).length) === get_result.match(newlineRegex).length + 1) {
-      return true;  
+    try {
+      let result = await requestPromise({
+        method: 'GET',
+        url: hdxUrl,
+      });      
+      let newlineRegex = new RegExp('\\r\\n|\\n','g'); 
+      logger.debug(`hdx csv rows ${result.match(newlineRegex).length}`)
+      logger.debug(`api highways csv rows ${get_result.match(newlineRegex).length}`)
+      if(result.match(newlineRegex).length === get_result.match(newlineRegex).length 
+        || (result.match(newlineRegex).length) === get_result.match(newlineRegex).length + 1) 
+      {
+        return true;  
+      }
+      return false;        
     }
-    return false;
+    catch (ex) {
+      logger.error('unable to read csv data')
+      throw new Error(ex)
+    }
   }
 
 }
