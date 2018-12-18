@@ -1,10 +1,13 @@
 const logger = require('logger');
 const requestPromise = require('request-promise');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
+const download = require('download');
+const fs = require('fs');
+const md5 = require('md5-file')
 
 class CheckData {
   //checks to make sure data was imported properly.  If it has a doctype...it failed
-  static async checkCSVData(datasetId, hdxUrl) {
+  static async checkCSVData(datasetId, url, dataset) {
     let get_result;
     try {
       get_result = await ctRegisterMicroservice.requestToMicroservice({
@@ -30,23 +33,21 @@ class CheckData {
 
     //compare with hdx data
     try {
-      let result = await requestPromise({
-        method: 'GET',
-        url: hdxUrl,
-      });      
-      let newlineRegex = new RegExp('\\r\\n|\\n','g'); 
-      logger.debug(`hdx csv rows ${result.match(newlineRegex).length}`)
-      logger.debug(`api highways csv rows ${get_result.match(newlineRegex).length}`)
-      if(result.match(newlineRegex).length === get_result.match(newlineRegex).length 
-        || (result.match(newlineRegex).length) === get_result.match(newlineRegex).length + 1) 
-      {
-        return true;  
+      if(!dataset.hash || dataset.hash === "")
+        return false;
+      let fileHash = await download(url).then(data => {
+        fs.writeFileSync(`/tmp/temp.csv`, data);
+        const hash = md5.sync(downloadPath)
+        return hash;
+      })
+      if(fileHash === dataset.hash) {
+        return true;
       }
-      return false;        
+      return {hash: fileHash, match: false};        
     }
     catch (ex) {
       logger.error('unable to read csv data')
-      throw new Error(ex)
+      throw new Error(ex)      
     }
   }
 
