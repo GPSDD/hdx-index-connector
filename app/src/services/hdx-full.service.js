@@ -87,7 +87,7 @@ const response = {
                         "originalHash": "1476457411",
                         "mimetype": "text/csv",
                         "cache_url": null,
-                        "name": "Global Food Prices Database (WFP)",
+                        "name": "Yemen Test",
                         "created": "2018-09-27T11:46:58.054729",
                         "url": "https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1",
                         "mimetype_inner": null,
@@ -125,7 +125,7 @@ const response = {
                 "owner_org": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
                 "batch": "5edf1f01-58b4-4973-bada-e35f6930f047",
                 "pageviews_last_14_days": 344,
-                "title": "Global Food Prices Database (WFP)",
+                "title": "Yemen Test",
                 "package_creator": "luiscape"
             }
         ]
@@ -226,17 +226,19 @@ class HDXFullIndexService {
                     if(typeof dataIsValid === 'object' && dataIsValid.hash) {
                         hash = dataIsValid.hash;
                     }
-                    logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted...Deleting and re-adding`);
-                    try {
-                        await ctRegisterMicroservice.requestToMicroservice({
-                            method: 'DELETE',
-                            uri: `/dataset/${csv.id}`,
-                            json: true
-                        });    
-                    } catch (ex) {
-                        logger.warn(`unable to delete dataset: ${csv.id}`)
-                        return;    
-                    }
+                    logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted...Updating`);
+                    await HDXFullIndexService.updateDataset(dataset, csv, hash, hdxPackage);
+                    return;
+                    // try {
+                    //     await ctRegisterMicroservice.requestToMicroservice({
+                    //         method: 'DELETE',
+                    //         uri: `/dataset/${csv.id}`,
+                    //         json: true
+                    //     });    
+                    // } catch (ex) {
+                    //     logger.warn(`unable to delete dataset: ${csv.id}`)
+                    //     return;    
+                    // }
                 }    
             } catch (ex) {
                 console.warn("Unable to read csv file");
@@ -335,6 +337,90 @@ class HDXFullIndexService {
         //await post(metadata, `v1/dataset/${result.data.id}/metadata`, api_url, api_token)
       
     }
+    static async updateDataset(dataset, csv, hash, hdxPackage) { 
+        const timeout = ms => new Promise(res => setTimeout(res, ms))
+     
+        const dataSetName = dataset.name ? dataset.name : dataset.description;
+        let hash = '';
+      
+        logger.debug('Updating dataset ' + dataset.name)        
+        //some descriptions have markdown links, just use the name field
+        
+        let body = {
+            "name": dataSetName,
+            "provider": "csv",
+            "connectorType": "document",
+            "connectorUrl": dataset.url,
+            "application":[
+              "data4sdgs"
+            ],        
+            "published": false
+        };
+        let result = await ctRegisterMicroservice.requestToMicroservice({
+            method: 'PATCH',
+            uri: `/dataset/${csv.id}`,
+            body,
+            json: true
+        });
+
+        if(!result){
+          return;    
+        }
+        logger.debug('updated dataset');
+        logger.debug(result);
+        let dataset_id = result.data.id
+        let status = 'pending'
+      
+        while (status == 'pending'){
+          //let get_result = await get('v1/dataset/' + dataset_id, api_url, api_token)
+          let get_result = await ctRegisterMicroservice.requestToMicroservice({
+            method: 'GET',
+            uri: `/dataset/${dataset_id}`,
+            json: true
+          });
+          status = get_result.data.attributes.status;
+          if (status == 'pending') {
+            logger.debug('Sleeping...')
+            await timeout(4000)
+          }
+      
+        }
+        logger.debug('dataset saved - updating meta')
+      
+      
+        const dataSourceUrl = hdxConfig.hdx.dataSourceUrl.replace(':package-id', hdxPackage.name);
+        const license = hdxPackage.license_title || hdxPackage.license_id  || '';
+        var revisedLicense = ACCEPTED_LICENSE_STRINGS.includes(license.toUpperCase()) ? license : 'Other';
+        let metadata = {
+          language: 'en',
+          name: dataSetName,
+          description: dataset.description,
+          sourceOrganization: organization,
+          dataSourceUrl,
+          status: 'published',
+          license: revisedLicense,
+          userId: result.data.attributes.userId
+        };
+        if(revisedLicense === 'Other') {
+          metadata.info = {
+            license: license, //TODO: Should this be url? and if so where should it go;
+            hash: hash
+          }
+        }
+        else if(hash.length > 0) {
+            metadata.info = {
+                hash: hash
+            }                
+        }
+        await ctRegisterMicroservice.requestToMicroservice({
+            method: 'PATCH',
+            uri: `/dataset/${dataset_id}/metadata`,
+            body: metadata,
+            json: true
+        });
+        logger.debug(`dataset ${dataset_id} updated`)
+    }
+
 }
 
 module.exports = HDXFullIndexService;
