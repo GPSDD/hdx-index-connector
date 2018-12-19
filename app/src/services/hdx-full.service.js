@@ -341,8 +341,6 @@ class HDXFullIndexService {
         const timeout = ms => new Promise(res => setTimeout(res, ms))
      
         const dataSetName = dataset.name ? dataset.name : dataset.description;
-        let hash = '';
-      
         logger.debug('Updating dataset ' + dataset.name)        
         //some descriptions have markdown links, just use the name field
         
