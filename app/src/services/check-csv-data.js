@@ -47,6 +47,7 @@ class CheckData {
     }
     catch (ex) {
       logger.error('unable to read csv data')
+      logger.error(ex);
       throw new Error(ex)      
     }
   }

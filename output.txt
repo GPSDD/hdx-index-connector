@@ -3,33 +3,24 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-21T19:10:37.691Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-21T19:10:37.715Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-21T19:10:37.716Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-21T19:10:37.764Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-21T19:10:37.767Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-21T19:10:37.769Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-21T19:10:37.770Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-21T19:10:37.955Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-21T19:14:00.110Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-21T19:14:00.110Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:00.110Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:09.348Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Adding dataset Yemen Test","time":"2018-12-21T19:14:12.346Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:12.346Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"new dataset","time":"2018-12-21T19:14:12.646Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"data":{"id":"c99d9ce1-5c25-479c-8707-a3ac95837573","type":"dataset","attributes":{"name":"Yemen Test","slug":"Yemen-Test","type":null,"dataPath":null,"attributesPath":null,"connectorType":"document","provider":"csv","userId":"microservice","connectorUrl":"https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1","tableName":null,"status":"pending","published":false,"sandbox":false,"overwrite":true,"verified":false,"blockchain":{},"subscribable":{},"env":"production","geoInfo":false,"protected":false,"legend":{"date":[],"region":[],"country":[],"nested":[]},"clonedHost":{},"errorMessage":null,"taskId":null,"createdAt":"2018-12-21T19:14:12.378Z","updatedAt":"2018-12-21T19:14:12.378Z"}},"msg":"","time":"2018-12-21T19:14:12.647Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:12.647Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-21T19:14:12.669Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:16.670Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-21T19:14:16.697Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:20.701Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-21T19:14:20.723Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:24.726Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-21T19:14:24.749Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:28.750Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"Sleeping...","time":"2018-12-21T19:14:28.778Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:32.782Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":20,"msg":"dataset saved - updating vocab/tags","time":"2018-12-21T19:14:32.807Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:32.808Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-8748867f4-tf5gx","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:14:34.575Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-21T19:26:22.249Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-21T19:26:22.273Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-21T19:26:22.274Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-21T19:26:22.296Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-21T19:26:22.300Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-21T19:26:22.302Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-21T19:26:22.302Z","v":0}
+  <-- GET /info
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-21T19:26:22.411Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-21T19:26:22.411Z","v":0}
+  --> GET /info 200 10ms 1.62kb
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-21T19:26:22.512Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-21T19:28:00.094Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-21T19:28:00.094Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:28:00.094Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:28:09.621Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:28:11.543Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted...Updating","time":"2018-12-21T19:28:11.953Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":20,"msg":"Updating dataset Yemen Test","time":"2018-12-21T19:28:11.954Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f7b56794f-gnh75","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-21T19:28:11.954Z","v":0}
+Unable to read csv file
