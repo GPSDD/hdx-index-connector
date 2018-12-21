@@ -258,6 +258,7 @@ class HDXFullIndexService {
             "application":[
               "data4sdgs"
             ],        
+            "overwrite": true,
             "published": false
         };
         let result = await ctRegisterMicroservice.requestToMicroservice({
@@ -346,17 +347,12 @@ class HDXFullIndexService {
         
         let body = {
             "name": dataSetName,
-            "provider": "csv",
-            "connectorType": "document",
             "connectorUrl": dataset.url,
-            "application":[
-              "data4sdgs"
-            ],        
             "published": false
         };
         let result = await ctRegisterMicroservice.requestToMicroservice({
-            method: 'PATCH',
-            uri: `/dataset/${csv.id}`,
+            method: 'POST',
+            uri: `/dataset/${csv.id}/data-overwrite`,
             body,
             json: true
         });
