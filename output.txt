@@ -3,27 +3,28 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-24T15:47:11.762Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-24T15:47:11.783Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-24T15:47:11.784Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-24T15:47:11.806Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-24T15:47:11.810Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-24T15:47:11.812Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-24T15:47:11.812Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-24T15:47:12.055Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-24T16:32:57.029Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-24T16:32:57.051Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-24T16:32:57.053Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-24T16:32:57.075Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-24T16:32:57.079Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-24T16:32:57.081Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-24T16:32:57.081Z","v":0}
   <-- GET /info
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-24T15:47:12.573Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-24T15:47:12.574Z","v":0}
-  --> GET /info 200 9ms 1.62kb
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-24T15:49:00.102Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-24T15:49:00.103Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T15:49:00.103Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T15:49:09.504Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T15:49:10.999Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"download url","time":"2018-12-24T15:49:11.248Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1","time":"2018-12-24T15:49:11.248Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"downloaded","time":"2018-12-24T15:49:11.899Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted...Updating","time":"2018-12-24T15:49:11.900Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"Updating dataset Yemen Test","time":"2018-12-24T15:49:11.900Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":20,"msg":"dataset idc99d9ce1-5c25-479c-8707-a3ac95837573","time":"2018-12-24T15:49:11.900Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7d479fb4f6-cmz76","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T15:49:11.900Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-24T16:32:57.177Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-24T16:32:57.177Z","v":0}
+  --> GET /info 200 10ms 1.62kb
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-24T16:32:57.272Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-24T16:35:00.013Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-24T16:35:00.013Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T16:35:00.013Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T16:35:10.198Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T16:35:11.664Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"download url","time":"2018-12-24T16:35:11.952Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1","time":"2018-12-24T16:35:11.952Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"downloaded","time":"2018-12-24T16:35:12.553Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted...Updating","time":"2018-12-24T16:35:12.558Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"Updating dataset Yemen Test","time":"2018-12-24T16:35:12.559Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":20,"msg":"dataset id c99d9ce1-5c25-479c-8707-a3ac95837573","time":"2018-12-24T16:35:12.559Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-7f5cd6bb47-5djz5","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T16:35:12.559Z","v":0}
+Unable to read csv file
