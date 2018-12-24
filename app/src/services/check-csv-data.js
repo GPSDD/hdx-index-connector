@@ -32,8 +32,6 @@ class CheckData {
 
     //compare with hdx data
     try {
-      if(!dataset.hash || dataset.hash === "")
-        return false;
       logger.info('download url')
       logger.info(url)
       let fileHash = await download(url).then(data => {
@@ -42,6 +40,7 @@ class CheckData {
         const hash = md5.sync(downloadPath)
         return hash;
       }).catch((ex) => logger.warn(ex))
+      if(!dataset.hash) return {hash: fileHash, match: false};
       if(fileHash === dataset.hash) {
         return true;
       }

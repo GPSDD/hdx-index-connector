@@ -348,8 +348,10 @@ class HDXFullIndexService {
         let body = {
             "name": dataSetName,
             "connectorUrl": dataset.url,
-            "published": false
+            "published": false,
+            "overwrite": true
         };
+        logger.debug('dataset id' + csv.id);
         let result = await ctRegisterMicroservice.requestToMicroservice({
             method: 'POST',
             uri: `/dataset/${csv.id}/data-overwrite`,
