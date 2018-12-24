@@ -1,5 +1,4 @@
 const logger = require('logger');
-const requestPromise = require('request-promise');
 const ctRegisterMicroservice = require('ct-register-microservice-node');
 const download = require('download');
 const fs = require('fs');
@@ -7,7 +6,7 @@ const md5 = require('md5-file')
 
 class CheckData {
   //checks to make sure data was imported properly.  If it has a doctype...it failed
-  static async checkCSVData(datasetId, url, dataset) {
+  static async checkDataValidity(datasetId, url, dataset) {
     let get_result;
     try {
       get_result = await ctRegisterMicroservice.requestToMicroservice({

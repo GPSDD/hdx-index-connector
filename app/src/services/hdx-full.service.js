@@ -217,7 +217,7 @@ class HDXFullIndexService {
           else {            
             //dataset exists, let's check the data and make sure data is fine             
             try {
-                let dataIsValid = await CheckData.checkCSVData(csv.id, dataset.url, csv);
+                let dataIsValid = await CheckData.checkDataValidity(csv.id, dataset.url, csv);
                 if(dataIsValid && typeof dataIsValid !== 'object') {
                   logger.info('Dataset ' + dataset.name + ` with id ${csv.id} already exists, skipping...`);
                   return;    

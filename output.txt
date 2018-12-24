@@ -3,24 +3,20 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-24T13:53:57.142Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-24T13:53:57.163Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-24T13:53:57.164Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-24T13:53:57.198Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-24T13:53:57.202Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-24T13:53:57.203Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-24T13:53:57.203Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-24T13:53:57.440Z","v":0}
-  <-- GET /info
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-24T13:53:58.569Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-24T13:53:58.569Z","v":0}
-  --> GET /info 200 9ms 1.62kb
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-24T13:56:00.010Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-24T13:56:00.010Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T13:56:00.010Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T13:56:05.070Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T13:56:07.187Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted...Updating","time":"2018-12-24T13:56:07.673Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":20,"msg":"Updating dataset Yemen Test","time":"2018-12-24T13:56:07.673Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-7bc6c7d5cf-p2wms","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T13:56:07.673Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-24T14:02:25.181Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-24T14:02:25.203Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-24T14:02:25.204Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-24T14:02:25.227Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-24T14:02:25.231Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-24T14:02:25.233Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-24T14:02:25.233Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-24T14:02:25.362Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-24T14:04:00.106Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-24T14:04:00.106Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T14:04:00.107Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T14:04:05.580Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T14:04:07.302Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted...Updating","time":"2018-12-24T14:04:07.748Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":20,"msg":"Updating dataset Yemen Test","time":"2018-12-24T14:04:07.748Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c7b59cb76-d5krr","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-24T14:04:07.748Z","v":0}
 Unable to read csv file
