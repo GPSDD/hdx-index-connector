@@ -37,7 +37,7 @@ class CheckData {
       let fileHash = await download(url).then(data => {
         logger.info('downloaded')
         fs.writeFileSync(`/tmp/temp.csv`, data);
-        const hash = md5.sync(downloadPath)
+        const hash = md5.sync(`/tmp/temp.csv`)
         return hash;
       }).catch((ex) => logger.warn(ex))
       if(!dataset.hash) return {hash: fileHash, match: false};

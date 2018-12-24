@@ -346,10 +346,8 @@ class HDXFullIndexService {
         //some descriptions have markdown links, just use the name field
         
         let body = {
-            "name": dataSetName,
-            "connectorUrl": dataset.url,
-            "published": false,
-            "overwrite": true
+            "provider": "csv",
+            "url": dataset.url
         };
         logger.debug('dataset id' + csv.id);
         let result = await ctRegisterMicroservice.requestToMicroservice({
