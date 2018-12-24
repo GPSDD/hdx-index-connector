@@ -34,17 +34,21 @@ class CheckData {
     try {
       if(!dataset.hash || dataset.hash === "")
         return false;
+      logger.info('download url')
+      logger.info(url)
       let fileHash = await download(url).then(data => {
+        logger.info('downloaded')
         fs.writeFileSync(`/tmp/temp.csv`, data);
         const hash = md5.sync(downloadPath)
         return hash;
-      })
+      }).catch((ex) => logger.warn(ex))
       if(fileHash === dataset.hash) {
         return true;
       }
       return {hash: fileHash, match: false};        
     }
     catch (ex) {
+      //logger.error('unable to read csv data')
       logger.warn(ex);
       logger.warn('cannot read data');
       throw new Error(ex)      
