@@ -343,12 +343,26 @@ class HDXFullIndexService {
      
         const dataSetName = dataset.name ? dataset.name : dataset.description;
 
+        logger.debug('Updating dataset data' + dataset.name)        
+        //some descriptions have markdown links, just use the name field
+        
+        let body = {
+            "provider": "csv",
+            "url": dataset.url
+        };
+        logger.debug('dataset id ' + csv.id);
+        let result = await ctRegisterMicroservice.requestToMicroservice({
+            method: 'POST',
+            uri: `/dataset/${csv.id}/data-overwrite`,
+            body,
+            json: true
+        });
+
         logger.debug('updating metadata')
         const dataSourceUrl = hdxConfig.hdx.dataSourceUrl.replace(':package-id', hdxPackage.name);
         const license = hdxPackage.license_title || hdxPackage.license_id  || '';
         var revisedLicense = ACCEPTED_LICENSE_STRINGS.includes(license.toUpperCase()) ? license : 'Other';
         let metadata = {
-          name: dataSetName,
           description: dataset.description,
           dataSourceUrl,
           license: revisedLicense,
@@ -371,21 +385,6 @@ class HDXFullIndexService {
             json: true
         });
         logger.debug(`dataset ${csv.id} updated`)
-
-        logger.debug('Updating dataset data' + dataset.name)        
-        //some descriptions have markdown links, just use the name field
-        
-        let body = {
-            "provider": "csv",
-            "url": dataset.url
-        };
-        logger.debug('dataset id ' + csv.id);
-        let result = await ctRegisterMicroservice.requestToMicroservice({
-            method: 'POST',
-            uri: `/dataset/${csv.id}/data-overwrite`,
-            body,
-            json: true
-        });
 
         logger.debug('dataset update complete');
     }
