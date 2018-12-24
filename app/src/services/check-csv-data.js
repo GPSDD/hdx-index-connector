@@ -45,8 +45,8 @@ class CheckData {
       return {hash: fileHash, match: false};        
     }
     catch (ex) {
-      //logger.error('unable to read csv data')
-      logger.error(ex);
+      logger.warn(ex);
+      logger.warn('cannot read data');
       throw new Error(ex)      
     }
   }
