@@ -42,7 +42,7 @@ class CheckData {
       }).catch((ex) => logger.warn(ex))
       if(!dataset.hash) return {hash: fileHash, match: false};
       if(fileHash === dataset.hash) {
-        return true;
+        return {hash: fileHash, match: true};
       }
       return {hash: fileHash, match: false};        
     }

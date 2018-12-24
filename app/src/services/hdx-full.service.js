@@ -218,7 +218,7 @@ class HDXFullIndexService {
             //dataset exists, let's check the data and make sure data is fine             
             try {
                 let dataIsValid = await CheckData.checkDataValidity(csv.id, dataset.url, csv);
-                if(dataIsValid && typeof dataIsValid !== 'object') {
+                if(dataIsValid && typeof dataIsValid === 'object' && dataIsValid.match) {
                   logger.info('Dataset ' + dataset.name + ` with id ${csv.id} already exists, skipping...`);
                   return;    
                 }                
@@ -226,7 +226,7 @@ class HDXFullIndexService {
                     if(typeof dataIsValid === 'object' && dataIsValid.hash) {
                         hash = dataIsValid.hash;
                     }
-                    logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted...Updating`);
+                    logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted or updated...updating`);
                     await HDXFullIndexService.updateDataset(dataset, csv, hash, hdxPackage);
                     return;
                     // try {
@@ -342,58 +342,16 @@ class HDXFullIndexService {
         const timeout = ms => new Promise(res => setTimeout(res, ms))
      
         const dataSetName = dataset.name ? dataset.name : dataset.description;
-        logger.debug('Updating dataset ' + dataset.name)        
-        //some descriptions have markdown links, just use the name field
-        
-        let body = {
-            "provider": "csv",
-            "url": dataset.url
-        };
-        logger.debug('dataset id ' + csv.id);
-        let result = await ctRegisterMicroservice.requestToMicroservice({
-            method: 'POST',
-            uri: `/dataset/${csv.id}/data-overwrite`,
-            body,
-            json: true
-        });
 
-        if(!result){
-          return;    
-        }
-        logger.debug('updated dataset');
-        logger.debug(result);
-        let dataset_id = result.data.id
-        let status = 'pending'
-      
-        while (status == 'pending'){
-          //let get_result = await get('v1/dataset/' + dataset_id, api_url, api_token)
-          let get_result = await ctRegisterMicroservice.requestToMicroservice({
-            method: 'GET',
-            uri: `/dataset/${dataset_id}`,
-            json: true
-          });
-          status = get_result.data.attributes.status;
-          if (status == 'pending') {
-            logger.debug('Sleeping...')
-            await timeout(4000)
-          }
-      
-        }
-        logger.debug('dataset saved - updating meta')
-      
-      
+        logger.debug('updating metadata')
         const dataSourceUrl = hdxConfig.hdx.dataSourceUrl.replace(':package-id', hdxPackage.name);
         const license = hdxPackage.license_title || hdxPackage.license_id  || '';
         var revisedLicense = ACCEPTED_LICENSE_STRINGS.includes(license.toUpperCase()) ? license : 'Other';
         let metadata = {
-          language: 'en',
           name: dataSetName,
           description: dataset.description,
-          sourceOrganization: organization,
           dataSourceUrl,
-          status: 'published',
           license: revisedLicense,
-          userId: result.data.attributes.userId
         };
         if(revisedLicense === 'Other') {
           metadata.info = {
@@ -408,11 +366,28 @@ class HDXFullIndexService {
         }
         await ctRegisterMicroservice.requestToMicroservice({
             method: 'PATCH',
-            uri: `/dataset/${dataset_id}/metadata`,
+            uri: `/dataset/${csv.id}/metadata`,
             body: metadata,
             json: true
         });
-        logger.debug(`dataset ${dataset_id} updated`)
+        logger.debug(`dataset ${csv.id} updated`)
+
+        logger.debug('Updating dataset data' + dataset.name)        
+        //some descriptions have markdown links, just use the name field
+        
+        let body = {
+            "provider": "csv",
+            "url": dataset.url
+        };
+        logger.debug('dataset id ' + csv.id);
+        let result = await ctRegisterMicroservice.requestToMicroservice({
+            method: 'POST',
+            uri: `/dataset/${csv.id}/data-overwrite`,
+            body,
+            json: true
+        });
+
+        logger.debug('dataset update complete');
     }
 
 }
