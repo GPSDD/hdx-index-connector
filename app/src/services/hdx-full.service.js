@@ -226,6 +226,8 @@ class HDXFullIndexService {
                     if(typeof dataIsValid === 'object' && dataIsValid.hash) {
                         hash = dataIsValid.hash;
                     }
+                    logger.info(dataIsValid);
+                    logger.info(hash);
                     logger.warn('Dataset ' + dataset.name + ` with id ${csv.id} exists, but data is corrupted or updated...updating`);
                     await HDXFullIndexService.updateDataset(dataset, csv, hash, hdxPackage);
                     return;
