@@ -36,101 +36,101 @@ hdx: {
 }
 }
 
-const response = {
-    "help": "http://data.humdata.org/api/3/action/help_show?name=package_search",
-    "success": true,
-    "result": {
-        "count": 28,
-        "sort": "score desc, metadata_modified desc",
-        "search_facets": {},
-        "facets": {},
-        "expanded": {},
-        "results": [
-            {
-                "data_update_frequency": "7",
-                "license_title": "cc-by-igo",
-                "maintainer": "9957c0e9-cd38-40f1-900b-22c91276154b",
-                "relationships_as_object": [],
-                "private": false,
-                "dataset_date": "01/01/1992-07/15/2019",
-                "num_tags": 5,
-                "id": "4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27",
-                "metadata_created": "2015-04-15T21:12:50.572360",
-                "caveats": "",
-                "metadata_modified": "2018-12-09T08:23:25.470612",
-                "author": "",
-                "author_email": "",
-                "subnational": "0",
-                "state": "active",
-                "has_geodata": false,
-                "methodology": "Registry",
-                "version": null,
-                "is_requestdata_type": false,
-                "license_id": "cc-by-igo",
-                "type": "dataset",
-                "resources": [
-                    {
-                        "cache_last_updated": null,
-                        "package_id": "4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27",
-                        "dataset_preview_enabled": "False",
-                        "datastore_active": true,
-                        "id": "12d7c8e3-eff9-4db0-93b7-726825c4fe9a",
-                        "size": 102740409,
-                        "revision_last_updated": "2018-12-09T08:23:25.468852",
-                        "state": "active",
-                        "hash": "",
-                        "description": "Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).",
-                        "format": "CSV",
-                        "hdx_rel_url": "/dataset/4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27/resource/12d7c8e3-eff9-4db0-93b7-726825c4fe9a/download/wfpvam_foodprices.csv",
-                        "last_modified": "2018-12-09T08:23:25.087042",
-                        "url_type": "upload",
-                        "originalHash": "1476457411",
-                        "mimetype": "text/csv",
-                        "cache_url": null,
-                        "name": "Yemen Test",
-                        "created": "2018-09-27T11:46:58.054729",
-                        "url": "https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1",
-                        "mimetype_inner": null,
-                        "position": 0,
-                        "revision_id": "bb8ef885-a37d-439a-b2fe-cecd8a976d89",
-                        "resource_type": "file.upload"
-                    }
-                ],
-                "dataset_preview": "first_resource",
-                "num_resources": 1,
-                "dataset_source": "World Food Programme - VAM",
-                "revision_id": "802d8647-eb7e-4455-96e1-fd376532e1ff",
-                "creator_user_id": "154de241-38d6-47d3-a77f-0a9848a61df3",
-                "has_quickcharts": false,
-                "maintainer_email": "orest3.dubay@gmail.com",
-                "relationships_as_subject": [],
-                "total_res_downloads": 2384,
-                "organization": {
-                    "description": "WFP is the world's largest humanitarian agency fighting hunger worldwide, delivering food assistance in emergencies and working with communities to improve nutrition and build resilience. Each year, WFP assists some 80 million people in around 75 countries.",
-                    "created": "2014-10-24T15:55:52.696098",
-                    "title": "WFP - World Food Programme",
-                    "name": "wfp",
-                    "is_organization": true,
-                    "state": "active",
-                    "image_url": "",
-                    "revision_id": "befd2a5c-7eff-4897-b459-80b00efbf678",
-                    "type": "organization",
-                    "id": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
-                    "approval_status": "approved"
-                },
-                "name": "wfp-food-prices",
-                "isopen": false,
-                "url": null,
-                "notes": "This dataset contains Global Food Prices data from the World Food Programme covering foods such as maize, rice, beans, fish, and sugar for 76 countries and some 1,500 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.",
-                "owner_org": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
-                "batch": "5edf1f01-58b4-4973-bada-e35f6930f047",
-                "pageviews_last_14_days": 344,
-                "title": "Yemen Test",
-                "package_creator": "luiscape"
-            }
-        ]
-    }
-}
+// const response = {
+//     "help": "http://data.humdata.org/api/3/action/help_show?name=package_search",
+//     "success": true,
+//     "result": {
+//         "count": 28,
+//         "sort": "score desc, metadata_modified desc",
+//         "search_facets": {},
+//         "facets": {},
+//         "expanded": {},
+//         "results": [
+//             {
+//                 "data_update_frequency": "7",
+//                 "license_title": "cc-by-igo",
+//                 "maintainer": "9957c0e9-cd38-40f1-900b-22c91276154b",
+//                 "relationships_as_object": [],
+//                 "private": false,
+//                 "dataset_date": "01/01/1992-07/15/2019",
+//                 "num_tags": 5,
+//                 "id": "4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27",
+//                 "metadata_created": "2015-04-15T21:12:50.572360",
+//                 "caveats": "",
+//                 "metadata_modified": "2018-12-09T08:23:25.470612",
+//                 "author": "",
+//                 "author_email": "",
+//                 "subnational": "0",
+//                 "state": "active",
+//                 "has_geodata": false,
+//                 "methodology": "Registry",
+//                 "version": null,
+//                 "is_requestdata_type": false,
+//                 "license_id": "cc-by-igo",
+//                 "type": "dataset",
+//                 "resources": [
+//                     {
+//                         "cache_last_updated": null,
+//                         "package_id": "4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27",
+//                         "dataset_preview_enabled": "False",
+//                         "datastore_active": true,
+//                         "id": "12d7c8e3-eff9-4db0-93b7-726825c4fe9a",
+//                         "size": 102740409,
+//                         "revision_last_updated": "2018-12-09T08:23:25.468852",
+//                         "state": "active",
+//                         "hash": "",
+//                         "description": "Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).",
+//                         "format": "CSV",
+//                         "hdx_rel_url": "/dataset/4fdcd4dc-5c2f-43af-a1e4-93c9b6539a27/resource/12d7c8e3-eff9-4db0-93b7-726825c4fe9a/download/wfpvam_foodprices.csv",
+//                         "last_modified": "2018-12-09T08:23:25.087042",
+//                         "url_type": "upload",
+//                         "originalHash": "1476457411",
+//                         "mimetype": "text/csv",
+//                         "cache_url": null,
+//                         "name": "Yemen Test",
+//                         "created": "2018-09-27T11:46:58.054729",
+//                         "url": "https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1",
+//                         "mimetype_inner": null,
+//                         "position": 0,
+//                         "revision_id": "bb8ef885-a37d-439a-b2fe-cecd8a976d89",
+//                         "resource_type": "file.upload"
+//                     }
+//                 ],
+//                 "dataset_preview": "first_resource",
+//                 "num_resources": 1,
+//                 "dataset_source": "World Food Programme - VAM",
+//                 "revision_id": "802d8647-eb7e-4455-96e1-fd376532e1ff",
+//                 "creator_user_id": "154de241-38d6-47d3-a77f-0a9848a61df3",
+//                 "has_quickcharts": false,
+//                 "maintainer_email": "orest3.dubay@gmail.com",
+//                 "relationships_as_subject": [],
+//                 "total_res_downloads": 2384,
+//                 "organization": {
+//                     "description": "WFP is the world's largest humanitarian agency fighting hunger worldwide, delivering food assistance in emergencies and working with communities to improve nutrition and build resilience. Each year, WFP assists some 80 million people in around 75 countries.",
+//                     "created": "2014-10-24T15:55:52.696098",
+//                     "title": "WFP - World Food Programme",
+//                     "name": "wfp",
+//                     "is_organization": true,
+//                     "state": "active",
+//                     "image_url": "",
+//                     "revision_id": "befd2a5c-7eff-4897-b459-80b00efbf678",
+//                     "type": "organization",
+//                     "id": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+//                     "approval_status": "approved"
+//                 },
+//                 "name": "wfp-food-prices",
+//                 "isopen": false,
+//                 "url": null,
+//                 "notes": "This dataset contains Global Food Prices data from the World Food Programme covering foods such as maize, rice, beans, fish, and sugar for 76 countries and some 1,500 markets. It is updated weekly but contains to a large extent monthly data. The data goes back as far as 1992 for a few countries, although many countries started reporting from 2003 or thereafter.",
+//                 "owner_org": "3ecac442-7fed-448d-8f78-b385ef6f84e7",
+//                 "batch": "5edf1f01-58b4-4973-bada-e35f6930f047",
+//                 "pageviews_last_14_days": 344,
+//                 "title": "Yemen Test",
+//                 "package_creator": "luiscape"
+//             }
+//         ]
+//     }
+// }
 class HDXFullIndexService {
 
     static async cronUpdate() {
@@ -138,12 +138,12 @@ class HDXFullIndexService {
         try {
             logger.info('Running cron update');
             logger.debug('Obtaining datasets');
-            // const hdxPackageResponse = await requestPromise({
-            //     method: 'GET',
-            //     url: 'https://data.humdata.org/api/action/package_search?&fq=(res_format:JSON%20OR%20res_format:CSV)%20AND%20groups:yem&start=1&rows=100',
-            //     json: true
-            // });
-            const hdxPackageResponse = response;
+            const hdxPackageResponse = await requestPromise({
+                method: 'GET',
+                url: 'https://data.humdata.org/api/action/package_search?&fq=(res_format:JSON%20OR%20res_format:CSV)%20AND%20groups:yem&start=1&rows=100',
+                json: true
+            });
+            // const hdxPackageResponse = response;
             let humData = hdxPackageResponse.result;
             let hdxResponse = await ctRegisterMicroservice.requestToMicroservice({
                 method: 'GET',
@@ -293,7 +293,7 @@ class HDXFullIndexService {
       
         }
         logger.debug('dataset saved - updating vocab/tags')
-        let tags = ['hdx-full-test'];
+        let tags = ['hdx-full'];
         const organization = hdxPackage.dataset_source || '';
         await ctRegisterMicroservice.requestToMicroservice({
             method: 'POST',
