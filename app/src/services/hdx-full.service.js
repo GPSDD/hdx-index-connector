@@ -158,8 +158,8 @@ class HDXFullIndexService {
             
             let tableNames = hdxResponse.data.map(x => { return {tableName: x.attributes.tableName, id: x.id, connectorType: x.attributes.connectorType, name: x.attributes.name}})
             let csvNames = csvResponse.data.map(x => { 
-                if(x.attributes.metadata && x.attributes.metadata.length > 0 && x.attributes.metadata[0].info && x.attributes.metadata[0].info.hash)
-                    return {tableName: x.attributes.tableName, id: x.id, connectorType: x.attributes.connectorType, name: x.attributes.name, status: x.attributes.status, hash: x.attributes.metadata[0].info.hash};
+                if(x.attributes.metadata && x.attributes.metadata.length > 0 && x.attributes.metadata[0].attributes.info && x.attributes.metadata[0].attributes.info.hash)
+                    return {tableName: x.attributes.tableName, id: x.id, connectorType: x.attributes.connectorType, name: x.attributes.name, status: x.attributes.status, hash: x.attributes.metadata[0].attributes.info.hash};
                 return {tableName: x.attributes.tableName, id: x.id, connectorType: x.attributes.connectorType, name: x.attributes.name, status: x.attributes.status, hash: ''}
             })
             

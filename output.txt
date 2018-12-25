@@ -3,32 +3,36 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-25T19:53:18.712Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-25T19:53:18.735Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-25T19:53:18.736Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-25T19:53:18.782Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-25T19:53:18.786Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-25T19:53:18.788Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-25T19:53:18.788Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-25T19:53:18.966Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-25T19:55:00.103Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-25T19:55:00.104Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T19:55:00.104Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T19:55:04.832Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T19:55:05.936Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"download url","time":"2018-12-25T19:55:06.573Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1","time":"2018-12-25T19:55:06.573Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"downloaded","time":"2018-12-25T19:55:07.586Z","v":0}
-{"name":"Yemen Test","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"tableName":"index_c99d9ce15c25479c8707a3ac95837573_1545766824266","id":"c99d9ce1-5c25-479c-8707-a3ac95837573","connectorType":"document","status":"saved","hash":"","msg":"","time":"2018-12-25T19:55:07.591Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"hash":"7cfba26bbb64e6f0f51b762bcf9f8c60","match":false,"msg":"","time":"2018-12-25T19:55:07.591Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"7cfba26bbb64e6f0f51b762bcf9f8c60","time":"2018-12-25T19:55:07.592Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted or updated...updating","time":"2018-12-25T19:55:07.592Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"Updating dataset dataYemen Test","time":"2018-12-25T19:55:07.592Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"dataset id c99d9ce1-5c25-479c-8707-a3ac95837573","time":"2018-12-25T19:55:07.592Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T19:55:07.592Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"updating metadata","time":"2018-12-25T19:55:07.625Z","v":0}
-{"name":"Yemen Test","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"language":"en","sourceOrganization":"World Food Programme - VAM","description":"Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).","dataSourceUrl":"https://data.humdata.org/dataset/wfp-food-prices","license":"Other","msg":"","time":"2018-12-25T19:55:07.625Z","v":0}
-{"name":"Yemen Test","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"language":"en","sourceOrganization":"World Food Programme - VAM","description":"Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).","dataSourceUrl":"https://data.humdata.org/dataset/wfp-food-prices","license":"Other","info":{"license":"cc-by-igo","hash":"7cfba26bbb64e6f0f51b762bcf9f8c60"},"msg":"","time":"2018-12-25T19:55:07.625Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T19:55:07.625Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"dataset c99d9ce1-5c25-479c-8707-a3ac95837573 updated","time":"2018-12-25T19:55:07.687Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6fd98dd66c-z9lgf","pid":17,"level":20,"msg":"dataset update complete","time":"2018-12-25T19:55:07.687Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-25T20:02:45.013Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-25T20:02:45.035Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-25T20:02:45.036Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-25T20:02:45.058Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-25T20:02:45.062Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-25T20:02:45.063Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-25T20:02:45.064Z","v":0}
+  <-- GET /info
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Entering with path /info","time":"2018-12-25T20:02:45.268Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Obtaining info to register microservice","time":"2018-12-25T20:02:45.268Z","v":0}
+  --> GET /info 200 9ms 1.62kb
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-25T20:02:45.375Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Running cron update","time":"2018-12-25T20:05:00.019Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Obtaining datasets","time":"2018-12-25T20:05:00.019Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T20:05:00.019Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T20:05:05.283Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T20:05:07.049Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"download url","time":"2018-12-25T20:05:07.439Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"https://docs.google.com/spreadsheets/d/1HxOT3bSOVGFcQmLA-3wroVlouS1Vy-1lajgnMrR1muA/gviz/tq?tqx=out:csv&sheet=Sheet1","time":"2018-12-25T20:05:07.439Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"downloaded","time":"2018-12-25T20:05:08.223Z","v":0}
+{"name":"Yemen Test","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"tableName":"index_c99d9ce15c25479c8707a3ac95837573_1545767719688","id":"c99d9ce1-5c25-479c-8707-a3ac95837573","connectorType":"document","status":"saved","hash":"","msg":"","time":"2018-12-25T20:05:08.224Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"hash":"7cfba26bbb64e6f0f51b762bcf9f8c60","match":false,"msg":"","time":"2018-12-25T20:05:08.224Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"7cfba26bbb64e6f0f51b762bcf9f8c60","time":"2018-12-25T20:05:08.224Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":40,"msg":"Dataset Yemen Test with id c99d9ce1-5c25-479c-8707-a3ac95837573 exists, but data is corrupted or updated...updating","time":"2018-12-25T20:05:08.224Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"Updating dataset dataYemen Test","time":"2018-12-25T20:05:08.225Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"dataset id c99d9ce1-5c25-479c-8707-a3ac95837573","time":"2018-12-25T20:05:08.225Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T20:05:08.225Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"updating metadata","time":"2018-12-25T20:05:08.264Z","v":0}
+{"name":"Yemen Test","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"language":"en","sourceOrganization":"World Food Programme - VAM","description":"Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).","dataSourceUrl":"https://data.humdata.org/dataset/wfp-food-prices","license":"Other","msg":"","time":"2018-12-25T20:05:08.264Z","v":0}
+{"name":"Yemen Test","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"language":"en","sourceOrganization":"World Food Programme - VAM","description":"Word Food Programme – Food Prices  Data Source: WFP Vulnerability Analysis and Mapping (VAM).","dataSourceUrl":"https://data.humdata.org/dataset/wfp-food-prices","license":"Other","info":{"license":"cc-by-igo","hash":"7cfba26bbb64e6f0f51b762bcf9f8c60"},"msg":"","time":"2018-12-25T20:05:08.265Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":30,"msg":"Adding authentication header ","time":"2018-12-25T20:05:08.265Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"dataset c99d9ce1-5c25-479c-8707-a3ac95837573 updated","time":"2018-12-25T20:05:08.327Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-85fc6fd54-t6btl","pid":17,"level":20,"msg":"dataset update complete","time":"2018-12-25T20:05:08.327Z","v":0}
