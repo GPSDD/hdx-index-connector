@@ -369,6 +369,7 @@ class HDXFullIndexService {
           dataSourceUrl,
           license: revisedLicense,
         };
+        logger.debug(metadata)
         if(revisedLicense === 'Other') {
           metadata.info = {
             license: license, //TODO: Should this be url? and if so where should it go;
@@ -380,6 +381,7 @@ class HDXFullIndexService {
                 hash: hash
             }                
         }
+        logger.debug(metadata)
         await ctRegisterMicroservice.requestToMicroservice({
             method: 'PATCH',
             uri: `/dataset/${csv.id}/metadata`,
