@@ -40,7 +40,7 @@ class CheckData {
         const hash = md5.sync(`/tmp/temp.csv`)
         return hash;
       }).catch((ex) => logger.warn(ex))
-      logger.info(fileHash)
+      logger.info(dataset)
       if(!dataset.hash) return {hash: fileHash, match: false};
       if(fileHash === dataset.hash) {
         return {hash: fileHash, match: true};
