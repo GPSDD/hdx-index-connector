@@ -363,10 +363,12 @@ class HDXFullIndexService {
         logger.debug('updating metadata')
         const dataSourceUrl = hdxConfig.hdx.dataSourceUrl.replace(':package-id', hdxPackage.name);
         const license = hdxPackage.license_title || hdxPackage.license_id  || '';
+        const organization = hdxPackage.dataset_source || '';
         var revisedLicense = ACCEPTED_LICENSE_STRINGS.includes(license.toUpperCase()) ? license : 'Other';
         let metadata = {
           name: dataSetName,
           language: "en",
+          sourceOrganization: organization,
           description: dataset.description,
           dataSourceUrl,
           license: revisedLicense,
