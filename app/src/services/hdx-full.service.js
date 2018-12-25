@@ -365,6 +365,7 @@ class HDXFullIndexService {
         const license = hdxPackage.license_title || hdxPackage.license_id  || '';
         var revisedLicense = ACCEPTED_LICENSE_STRINGS.includes(license.toUpperCase()) ? license : 'Other';
         let metadata = {
+          name: dataSetName,
           description: dataset.description,
           dataSourceUrl,
           license: revisedLicense,
