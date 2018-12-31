@@ -1,13 +1,13 @@
 Running Start
 
-> doc-writer@1.0.0 start /opt/doc-executor
-> NODE_PATH=app/src node app/index.js
+> hdx-adapter@1.1.0 start /opt/hdx-index-adapter
+> NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":20,"msg":"Initializing doc-executor","time":"2018-12-31T17:49:22.165Z","src":{"file":"/opt/doc-executor/app/src/app.js","line":3},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connecting to queue DOC-STATUS","time":"2018-12-31T17:49:22.283Z","src":{"file":"/opt/doc-executor/app/src/services/status-queue.service.js","line":13,"func":"StatusQueueService"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connecting to queue DOC-DATA","time":"2018-12-31T17:49:22.971Z","src":{"file":"/opt/doc-executor/app/src/services/data-queue.service.js","line":17,"func":"DataQueueService"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connecting to queue DOC-EXECUTOR-TASKS","time":"2018-12-31T17:49:23.283Z","src":{"file":"/opt/doc-executor/app/src/services/executor-queue.service.js","line":20,"func":"ExecutorQueueService"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connected","time":"2018-12-31T17:49:23.349Z","src":{"file":"/opt/doc-executor/app/src/services/status-queue.service.js","line":16,"func":"StatusQueueService.init.then"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connected","time":"2018-12-31T17:49:23.350Z","src":{"file":"/opt/doc-executor/app/src/services/data-queue.service.js","line":20,"func":"DataQueueService.init.then"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":" [*] Waiting for messages in DOC-EXECUTOR-TASKS","time":"2018-12-31T17:49:23.350Z","src":{"file":"/opt/doc-executor/app/src/services/executor-queue.service.js","line":40,"func":"init"},"v":0}
-{"name":"doc-executor","hostname":"doc-executor-sdgs-6d9b9d66f4-cfc2l","pid":17,"level":30,"msg":"Connected","time":"2018-12-31T17:49:23.350Z","src":{"file":"/opt/doc-executor/app/src/services/executor-queue.service.js","line":23,"func":"ExecutorQueueService.init.then"},"v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":30,"msg":"Initializing cron","time":"2018-12-31T18:01:15.520Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":20,"msg":"Loading routes...","time":"2018-12-31T18:01:15.548Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2018-12-31T18:01:15.549Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2018-12-31T18:01:15.592Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":30,"msg":"Server started in  3012","time":"2018-12-31T18:01:15.596Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":30,"msg":"Initializing register microservice","time":"2018-12-31T18:01:15.598Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":20,"msg":"Checking mode","time":"2018-12-31T18:01:15.598Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-f4b9c5b4d-pbgbk","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2018-12-31T18:01:15.786Z","v":0}
