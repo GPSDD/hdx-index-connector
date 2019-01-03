@@ -167,7 +167,7 @@ class HDXFullIndexService {
                 await timeout(50)
                 await asyncForEach(hdxResult.resources, async (resource) => {
                   await timeout(50)
-                  if(resource.mimetype  === 'text/csv' || resource.url.indexOf('csv') > -1){
+                  if(resource.format  === 'CSV' || resource.format  === 'csv' || resource.url.indexOf('csv') > -1){
                     await HDXFullIndexService.addDataset(resource, tableNames, csvNames, hdxResult);  
                   }  
                 })

@@ -14,7 +14,7 @@ new CronJob("0 0 13 12 * *", async () => {
   'America/New_York' /* Time zone of this job. */
 );
 
-new CronJob("0 44 13 * * *", async () => {
+new CronJob("0 19 11 3 * *", async () => {
   return await hdxFullService.cronUpdate();
 }, null,
 true, /* Start the job right now */
