@@ -191,7 +191,7 @@ class HDXFullIndexService {
                 uri: `/dataset/${existingDataset.id}`,
                 json: true
             });
-          } catch (ex) {
+          } catch (ex) {    
             logger.warn(`unable to delete dataset: ${existingDataset.id}`)
             return;
           }
@@ -201,7 +201,8 @@ class HDXFullIndexService {
         let hash = '';
         //iterates through existing full datasets.  If it exists, let's check the data to make sure it was uploaded correctly.  If it's fine, let's skip. if not, delete and re-add
         //if we don't find an existing dataset, lets add it.
-        if(csvNames.filter(y => y.name === dataSetName).length > 0) {
+        if(csvNames.filter(y => y.name === dataSetName).length > 0) { 
+            logger.info(`found dataset ${dataSetName}`)
           const csv = csvNames.find(y => y.name === dataSetName)  
           if(csv.status === 'failed') {
             //if previously failed, lets delete the dataset and try to re-add
@@ -251,7 +252,7 @@ class HDXFullIndexService {
           }
         }
       
-        logger.debug('Adding dataset ' + dataset.name)        
+        logger.info('Adding dataset ' + dataset.name)        
         //some descriptions have markdown links, just use the name field
         
         let body = {
