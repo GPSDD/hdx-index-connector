@@ -3,15 +3,11 @@ Running Start
 > hdx-adapter@1.1.0 start /opt/hdx-index-adapter
 > NODE_PATH=app/src node $NODE_DEBUG_OPTION app/index.js
 
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":30,"msg":"Initializing cron","time":"2019-01-03T22:50:42.945Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":20,"msg":"Loading routes...","time":"2019-01-03T22:50:42.970Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2019-01-03T22:50:42.971Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":20,"msg":"Loaded routes correctly!","time":"2019-01-03T22:50:42.991Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":30,"msg":"Server started in  3012","time":"2019-01-03T22:50:42.994Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":30,"msg":"Initializing register microservice","time":"2019-01-03T22:50:42.996Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":20,"msg":"Checking mode","time":"2019-01-03T22:50:42.996Z","v":0}
-  <-- GET /info
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":30,"msg":"Entering with path /info","time":"2019-01-03T22:50:43.185Z","v":0}
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":30,"msg":"Obtaining info to register microservice","time":"2019-01-03T22:50:43.185Z","v":0}
-  --> GET /info 200 9ms 1.62kb
-{"name":"hdx-index-adapter","hostname":"hdx-adapter-6c757bf4db-f4gmb","pid":16,"level":20,"msg":"Register microservice complete succesfully!","time":"2019-01-03T22:50:43.277Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":30,"msg":"Initializing cron","time":"2019-01-07T14:45:14.944Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":20,"msg":"Loading routes...","time":"2019-01-07T14:45:14.972Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":20,"msg":"Loading route /opt/hdx-index-adapter/app/src/routes/api/v1/hdx.router.js, in path /api/v1","time":"2019-01-07T14:45:14.975Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":20,"msg":"Loaded routes correctly!","time":"2019-01-07T14:45:15.015Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":30,"msg":"Server started in  3012","time":"2019-01-07T14:45:15.019Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":30,"msg":"Initializing register microservice","time":"2019-01-07T14:45:15.021Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":20,"msg":"Checking mode","time":"2019-01-07T14:45:15.021Z","v":0}
+{"name":"hdx-index-adapter","hostname":"hdx-adapter-5cbc9dc89f-zd6d6","pid":17,"level":20,"msg":"Register microservice complete succesfully!","time":"2019-01-07T14:45:15.291Z","v":0}
