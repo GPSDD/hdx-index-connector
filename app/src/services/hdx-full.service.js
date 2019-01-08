@@ -176,7 +176,7 @@ class HDXFullIndexService {
             })        
         } catch (err) {
             logger.error('Error in cron update', err);
-            throw err;
+            //throw err;
         }
     }
 
@@ -202,7 +202,7 @@ class HDXFullIndexService {
         //iterates through existing full datasets.  If it exists, let's check the data to make sure it was uploaded correctly.  If it's fine, let's skip. if not, delete and re-add
         //if we don't find an existing dataset, lets add it.
         if(csvNames.filter(y => y.name === dataSetName).length > 0) { 
-            logger.info(`found dataset ${dataSetName}`)
+          logger.info(`found dataset ${dataSetName}`)
           const csv = csvNames.find(y => y.name === dataSetName)  
           if(csv.status === 'failed') {
             //if previously failed, lets delete the dataset and try to re-add
