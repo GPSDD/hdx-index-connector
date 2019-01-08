@@ -198,6 +198,8 @@ class HDXFullIndexService {
         }
       
         const dataSetName = dataset.name ? dataset.name : dataset.description;
+        if(dataSetName === "List of activities in Yemen")
+            return;
         let hash = '';
         //iterates through existing full datasets.  If it exists, let's check the data to make sure it was uploaded correctly.  If it's fine, let's skip. if not, delete and re-add
         //if we don't find an existing dataset, lets add it.
@@ -347,7 +349,7 @@ class HDXFullIndexService {
         const timeout = ms => new Promise(res => setTimeout(res, ms))
      
         const dataSetName = dataset.name ? dataset.name : dataset.description;
-
+        
         logger.debug('Updating dataset data' + dataset.name)        
         //some descriptions have markdown links, just use the name field
         
