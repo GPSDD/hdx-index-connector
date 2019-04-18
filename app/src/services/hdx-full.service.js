@@ -327,13 +327,15 @@ class HDXFullIndexService {
         if(revisedLicense === 'Other') {
           metadata.info = {
             license: license, //TODO: Should this be url? and if so where should it go;
-            hash: hash
+            hash: hash,
+            resourceId: dataset.id
           }
         }
         else if(hash.length > 0) {
             metadata.info = {
-                hash: hash
-            }                
+                hash: hash,
+                resourceId: dataset.id
+              }                
         }
         //logger.debug(metadata)
         await ctRegisterMicroservice.requestToMicroservice({
@@ -382,12 +384,14 @@ class HDXFullIndexService {
         if(revisedLicense === 'Other') {
           metadata.info = {
             license: license, //TODO: Should this be url? and if so where should it go;
-            hash: hash
+            hash: hash,
+            resourceId: dataset.id
           }
         }
         else if(hash.length > 0) {
             metadata.info = {
-                hash: hash
+                hash: hash,
+                resourceId: dataset.id
             }                
         }
         logger.debug(metadata)
