@@ -5,6 +5,7 @@ const hdxFullService = require('services/hdx-full.service');
 const config = require('config');
 
 logger.info('Initializing cron');
+logger.info('0 6 11 * * *');
 
 new CronJob("0 0 13 12 * *", async () => {
     return await hdxService.cronUpdate();
