@@ -298,7 +298,7 @@ class HDXFullIndexService {
       
         }
         logger.debug('dataset saved - updating vocab/tags')
-        let tags = ['hdx-full'];
+        let tags = ['hdx-full-set'];
         const organization = hdxPackage.dataset_source || '';
         await ctRegisterMicroservice.requestToMicroservice({
             method: 'POST',
