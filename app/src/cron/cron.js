@@ -15,7 +15,7 @@ new CronJob("0 0 13 12 * *", async () => {
 );
 
 //new CronJob("0 0 3 * * *", async () => {
-new CronJob("0 36 20 * * *", async () => {
+new CronJob("0 20 11 * * *", async () => {
     return await hdxFullService.cronUpdate();
 }, null,
 true, /* Start the job right now */
